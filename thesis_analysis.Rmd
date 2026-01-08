@@ -9,11 +9,14 @@ install.packages("ggplot2")
 install.packages("patchwork")
 
 ```{r}
+
+BASE <- "C:/Users/30697/Desktop/Διπλωματική"
+
 # FRANCE 
 #asthma
 
 #first plot male+prevalence
-asthma_male_pr <- read.csv("C:\\Users\\30697\\Desktop\\Διπλωματική\\France\\asthma-male-prevalence.csv", stringsAsFactors = FALSE)
+asthma_male_pr <- read.csv(paste0(BASE, "/France/asthma-male-prevalence.csv"), stringsAsFactors = FALSE)
 head(asthma_male_pr)
 
 
@@ -65,7 +68,7 @@ ggplot_asthma_male_pr
 
 
 #second plot male+incidence
-asthma_male_inc <- read.csv("C:\\Users\\30697\\Desktop\\Διπλωματική\\France\\asthma-male-incidence.csv", stringsAsFactors = FALSE)
+asthma_male_inc <- read.csv(paste0(BASE, "/France/asthma-male-incidence.csv"), stringsAsFactors = FALSE)
 head(asthma_male_inc)
 library(dplyr)
 
@@ -115,7 +118,7 @@ ggplot_asthma_male_inc
 
 
 #third plot female+incidence
-asthma_female_inc <- read.csv("C:\\Users\\30697\\Desktop\\Διπλωματική\\France\\asthma-female-incidence.csv", stringsAsFactors = FALSE)
+asthma_female_inc <- read.csv(paste0(BASE, "/France/asthma-female-incidence.csv"), stringsAsFactors = FALSE)
 head(asthma_female_inc)
 library(dplyr)
 
@@ -165,7 +168,7 @@ ggplot_asthma_female_inc
 
 
 #fourth plot female+prevalence
-asthma_female_pr <- read.csv("C:\\Users\\30697\\Desktop\\Διπλωματική\\France\\asthma-female-prevalence.csv", stringsAsFactors = FALSE)
+asthma_female_pr <- read.csv(paste0(BASE, "/France/asthma-female-prevalence.csv"), stringsAsFactors = FALSE)
 head(asthma_female_pr)
 library(dplyr)
 
@@ -231,7 +234,7 @@ combined_plot + plot_annotation(
 #rheumatoid arthritis - France
 
 #first rheumatoid plot female+prevalence 
-rheum.arthr_female_pr <- read.csv("C:\\Users\\30697\\Desktop\\Διπλωματική\\France\\rheumatoid arthr-female-pr.csv", stringsAsFactors = FALSE)
+rheum.arthr_female_pr <- read.csv(paste0(BASE, "/France/rheumatoid arthr-female-pr.csv"), stringsAsFactors = FALSE)
 head(rheum.arthr_female_pr)
 library(dplyr)
 
@@ -280,7 +283,7 @@ ggplot_rheum.arthr_female_pr
 
 
 #second plot rheumatoid female+incidence
-rheum.arthr_female_inc <- read.csv("C:\\Users\\30697\\Desktop\\Διπλωματική\\France\\rheumatoid arthr-female-inc.csv", stringsAsFactors = FALSE)
+rheum.arthr_female_inc <- read.csv(paste0(BASE, "/France/rheumatoid arthr-female-inc.csv"), stringsAsFactors = FALSE)
 head(rheum.arthr_female_inc)
 library(dplyr)
 
@@ -329,7 +332,7 @@ ggplot_rheum.arthr_female_inc
 
 
 #third plot rheumatoid male+incidence
-rheum.arthr_male_inc <- read.csv("C:\\Users\\30697\\Desktop\\Διπλωματική\\France\\rheumatoid arthr-male-inc.csv", stringsAsFactors = FALSE)
+rheum.arthr_male_inc <- read.csv(paste0(BASE, "/France/rheumatoid arthr-male-inc.csv"), stringsAsFactors = FALSE)
 head(rheum.arthr_male_inc)
 library(dplyr)
 
@@ -378,7 +381,7 @@ ggplot_rheum.arthr_male_inc
 
 
 #fourth plot rheumatoid male+prevalence
-rheum.arthr_male_pr <- read.csv("C:\\Users\\30697\\Desktop\\Διπλωματική\\France\\rheumatoid arthr-male-pr.csv", stringsAsFactors = FALSE)
+rheum.arthr_male_pr <- read.csv(paste0(BASE, "/France/rheumatoid arthr-male-pr.csv"), stringsAsFactors = FALSE)
 head(rheum.arthr_male_pr)
 library(dplyr)
 
@@ -442,7 +445,7 @@ combined_plot + plot_annotation(
 #atopic dermatitis - France
 
 #first plot atopic male+prevalence
-atopic.derm_male_pr <- read.csv("C:\\Users\\30697\\Desktop\\Διπλωματική\\France\\atopic dermatitis-male-pr.csv", stringsAsFactors = FALSE)
+atopic.derm_male_pr <- read.csv(paste0(BASE, "/France/atopic dermatitis-male-pr.csv"), stringsAsFactors = FALSE)
 head(atopic.derm_male_pr)
 library(dplyr)
 
@@ -491,7 +494,7 @@ ggplot_atopic.derm_male_pr
 
 
 #second plot atopic male+incidence
-atopic.derm_male_inc <- read.csv("C:\\Users\\30697\\Desktop\\Διπλωματική\\France\\atopic dermatitis-male-inc.csv", stringsAsFactors = FALSE)
+atopic.derm_male_inc <- read.csv(paste0(BASE, "/France/atopic dermatitis-male-inc.csv"), stringsAsFactors = FALSE)
 head(atopic.derm_male_inc)
 library(dplyr)
 
@@ -539,7 +542,7 @@ ggplot_atopic.derm_male_inc
 
 
 #third plot atopic female+incidence
-atopic.derm_female_inc <- read.csv("C:\\Users\\30697\\Desktop\\Διπλωματική\\France\\atopic dermatitis-female-inc.csv", stringsAsFactors = FALSE)
+atopic.derm_female_inc <- read.csv(paste0(BASE, "/France/atopic dermatitis-female-inc.csv"), stringsAsFactors = FALSE)
 head(atopic.derm_female_inc)
 library(dplyr)
 
@@ -587,7 +590,7 @@ ggplot_atopic.derm_female_inc
 
 
 #fourth plot atopic female+prevalence
-atopic.derm_female_pr <- read.csv("C:\\Users\\30697\\Desktop\\Διπλωματική\\France\\atopic dermatitis-female-pr.csv", stringsAsFactors = FALSE)
+atopic.derm_female_pr <- read.csv(paste0(BASE, "/France/atopic dermatitis-female-pr.csv"), stringsAsFactors = FALSE)
 head(atopic.derm_female_pr)
 library(dplyr)
 
@@ -650,7 +653,7 @@ combined_plot + plot_annotation(
 #IBD - France
 
 #first plot IBD male+prevalence
-IBD_male_pr <- read.csv("C:\\Users\\30697\\Desktop\\Διπλωματική\\France\\IBD-male-pr.csv", stringsAsFactors = FALSE)
+IBD_male_pr <- read.csv(paste0(BASE, "/France/IBD-male-pr.csv"), stringsAsFactors = FALSE)
 head(IBD_male_pr)
 library(dplyr)
 
@@ -697,7 +700,7 @@ ggplot_IBD_male_pr
 
 
 #second plot IBD male+incidence
-IBD_male_inc <- read.csv("C:\\Users\\30697\\Desktop\\Διπλωματική\\France\\IBD-male-inc.csv", stringsAsFactors = FALSE)
+IBD_male_inc <- read.csv(paste0(BASE, "/France/IBD-male-inc.csv"), stringsAsFactors = FALSE)
 head(IBD_male_inc)
 library(dplyr)
 
@@ -744,7 +747,7 @@ ggplot_IBD_male_inc
 
 
 #third plot IBD female+incidence
-IBD_female_inc <- read.csv("C:\\Users\\30697\\Desktop\\Διπλωματική\\France\\IBD-female-inc.csv", stringsAsFactors = FALSE)
+IBD_female_inc <- read.csv(paste0(BASE, "/France/IBD-female-inc.csv"), stringsAsFactors = FALSE)
 head(IBD_female_inc)
 library(dplyr)
 
@@ -793,7 +796,7 @@ ggplot_IBD_female_inc
 
 
 #fourth plot IBD female+prevalence
-IBD_female_pr <- read.csv("C:\\Users\\30697\\Desktop\\Διπλωματική\\France\\IBD-female-pr.csv", stringsAsFactors = FALSE)
+IBD_female_pr <- read.csv(paste0(BASE, "/France/IBD-female-pr.csv"), stringsAsFactors = FALSE)
 head(IBD_female_pr)
 library(dplyr)
 
@@ -857,7 +860,7 @@ combined_plot + plot_annotation(
 #Multiple sclerosis - France
 
 #first plot sclerosis female+prevalence
-sclerosis_female_pr <- read.csv("C:\\Users\\30697\\Desktop\\Διπλωματική\\France\\sclerosis-female-pr.csv", stringsAsFactors = FALSE)
+sclerosis_female_pr <- read.csv(paste0(BASE, "/France/sclerosis-female-pr.csv"), stringsAsFactors = FALSE)
 head(sclerosis_female_pr)
 library(dplyr)
 
@@ -905,7 +908,7 @@ ggplot_sclerosis_female_pr
 
 
 #second plot sclerosis female+incidence
-sclerosis_female_inc <- read.csv("C:\\Users\\30697\\Desktop\\Διπλωματική\\France\\sclerosis-female-inc.csv", stringsAsFactors = FALSE)
+sclerosis_female_inc <- read.csv(paste0(BASE, "/France/sclerosis-female-inc.csv"), stringsAsFactors = FALSE)
 head(sclerosis_female_inc)
 library(dplyr)
 
@@ -953,7 +956,7 @@ ggplot_sclerosis_female_inc
 
 
 #third plot sclerosis male+incidence
-sclerosis_male_inc <- read.csv("C:\\Users\\30697\\Desktop\\Διπλωματική\\France\\sclerosis-male-inc.csv", stringsAsFactors = FALSE)
+sclerosis_male_inc <- read.csv(paste0(BASE, "/France/sclerosis-male-inc.csv"), stringsAsFactors = FALSE)
 head(sclerosis_male_inc)
 library(dplyr)
 
@@ -1002,7 +1005,7 @@ ggplot_sclerosis_male_inc
 
 
 #fourth plot sclerosis male+prevalence
-sclerosis_male_pr <- read.csv("C:\\Users\\30697\\Desktop\\Διπλωματική\\France\\sclerosis-male-pr.csv", stringsAsFactors = FALSE)
+sclerosis_male_pr <- read.csv(paste0(BASE, "/France/sclerosis-male-pr.csv"), stringsAsFactors = FALSE)
 head(sclerosis_male_pr)
 library(dplyr)
 
@@ -1066,7 +1069,7 @@ combined_plot + plot_annotation(
 #psoriasis - France
 
 #first plot psoriasis male+prevalence
-psoriasis_male_pr <- read.csv("C:\\Users\\30697\\Desktop\\Διπλωματική\\France\\psoriasis-male-pr.csv", stringsAsFactors = FALSE)
+psoriasis_male_pr <- read.csv(paste0(BASE, "/France/psoriasis-male-pr.csv"), stringsAsFactors = FALSE)
 head(psoriasis_male_pr)
 library(dplyr)
 
@@ -1114,7 +1117,7 @@ ggplot_psoriasis_male_pr
 
 
 #second plot psoriasis male+incidence
-psoriasis_male_inc <- read.csv("C:\\Users\\30697\\Desktop\\Διπλωματική\\France\\psoriasis-male-inc.csv", stringsAsFactors = FALSE)
+psoriasis_male_inc <- read.csv(paste0(BASE, "/France/psoriasis-male-inc.csv"), stringsAsFactors = FALSE)
 head(psoriasis_male_inc)
 library(dplyr)
 
@@ -1162,7 +1165,7 @@ ggplot_psoriasis_male_inc
 
 
 #third plot psoriasis female+incidence
-psoriasis_female_inc <- read.csv("C:\\Users\\30697\\Desktop\\Διπλωματική\\France\\psoriasis-female-inc.csv", stringsAsFactors = FALSE)
+psoriasis_female_inc <- read.csv(paste0(BASE, "/France/psoriasis-female-inc.csv"), stringsAsFactors = FALSE)
 head(psoriasis_female_inc)
 library(dplyr)
 
@@ -1210,7 +1213,7 @@ ggplot_psoriasis_female_inc
 
 
 #fourth plot psoriasis female+prevalence
-psoriasis_female_pr <- read.csv("C:\\Users\\30697\\Desktop\\Διπλωματική\\France\\psoriasis-female-pr.csv", stringsAsFactors = FALSE)
+psoriasis_female_pr <- read.csv(paste0(BASE, "/France/psoriasis-female-pr.csv"), stringsAsFactors = FALSE)
 head(psoriasis_female_pr)
 library(dplyr)
 
@@ -1274,7 +1277,7 @@ combined_plot + plot_annotation(
 #asthma - Greece
 
 #first plot male+prevalence
-asthma_male_pr <- read.csv("C:\\Users\\30697\\Desktop\\Διπλωματική\\Greece\\asthma-male-prevalence.csv", stringsAsFactors = FALSE)
+asthma_male_pr <- read.csv(paste0(BASE, "/Greece/asthma-male-prevalence.csv"), stringsAsFactors = FALSE)
 head(asthma_male_pr)
 
 library(dplyr)
@@ -1353,7 +1356,7 @@ ggplot_asthma_m_pr_summary2
 
 
 #second plot male+incidence
-asthma_male_inc <- read.csv("C:\\Users\\30697\\Desktop\\Διπλωματική\\Greece\\asthma-male-incidence.csv", stringsAsFactors = FALSE)
+asthma_male_inc <- read.csv(paste0(BASE, "/Greece/asthma-male-incidence.csv"), stringsAsFactors = FALSE)
 head(asthma_male_inc)
 library(dplyr)
 
@@ -1433,7 +1436,7 @@ ggplot_asthma_male_inc_summary2
 
 
 #third plot female+incidence
-asthma_female_inc <- read.csv("C:\\Users\\30697\\Desktop\\Διπλωματική\\Greece\\asthma-female-incidence.csv", stringsAsFactors = FALSE)
+asthma_female_inc <- read.csv(paste0(BASE, "/Greece/asthma-female-incidence.csv"), stringsAsFactors = FALSE)
 head(asthma_female_inc)
 library(dplyr)
 
@@ -1511,7 +1514,7 @@ ggplot_asthma_female_inc_summary2
 
 
 #fourth plot female+prevalence
-asthma_female_pr <- read.csv("C:\\Users\\30697\\Desktop\\Διπλωματική\\Greece\\asthma-female-prevalence.csv", stringsAsFactors = FALSE)
+asthma_female_pr <- read.csv(paste0(BASE, "/Greece/asthma-female-prevalence.csv"), stringsAsFactors = FALSE)
 head(asthma_female_pr)
 library(dplyr)
 
@@ -1601,7 +1604,6 @@ combined_plot + plot_annotation(
 
 
 #all the asthma plots together without ages
-install.packages("patchwork")
 library(patchwork)
 combined_plot2 <- (ggplot_asthma_female_pr_summary2 + ggplot_asthma_female_inc_summary2 +
                      ggplot_asthma_m_pr_summary2 + ggplot_asthma_male_inc_summary2) +
@@ -1619,7 +1621,7 @@ combined_plot2 + plot_annotation(
 #rheumatoid arthritis - Greece
 
 #first rheumatoid plot female+prevalence 
-rheum.arthr_female_pr <- read.csv("C:\\Users\\30697\\Desktop\\Διπλωματική\\Greece\\rheumatoid arthr-female-pr.csv", stringsAsFactors = FALSE)
+rheum.arthr_female_pr <- read.csv(paste0(BASE, "/Greece/rheumatoid arthr-female-pr.csv"), stringsAsFactors = FALSE)
 head(rheum.arthr_female_pr)
 library(dplyr)
 
@@ -1696,7 +1698,7 @@ ggplot_rheum.arthr_female_pr_summary2
 
 
 #second plot rheumatoid female+incidence
-rheum.arthr_female_inc <- read.csv("C:\\Users\\30697\\Desktop\\Διπλωματική\\Greece\\rheumatoid arthr-female-inc.csv", stringsAsFactors = FALSE)
+rheum.arthr_female_inc <- read.csv(paste0(BASE, "/Greece/rheumatoid arthr-female-inc.csv"), stringsAsFactors = FALSE)
 head(rheum.arthr_female_inc)
 library(dplyr)
 
@@ -1772,7 +1774,7 @@ ggplot_rheum.arthr_female_inc_summary2
 
 
 #third plot rheumatoid male+incidence
-rheum.arthr_male_inc <- read.csv("C:\\Users\\30697\\Desktop\\Διπλωματική\\Greece\\rheumatoid arthr-male-inc.csv", stringsAsFactors = FALSE)
+rheum.arthr_male_inc <- read.csv(paste0(BASE, "/Greece/rheumatoid arthr-male-inc.csv"), stringsAsFactors = FALSE)
 head(rheum.arthr_male_inc)
 library(dplyr)
 
@@ -1848,7 +1850,7 @@ ggplot_rheum.arthr_male_inc_summary2
 
 
 #fourth plot rheumatoid male+prevalence
-rheum.arthr_male_pr <- read.csv("C:\\Users\\30697\\Desktop\\Διπλωματική\\Greece\\rheumatoid arthr-male-pr.csv", stringsAsFactors = FALSE)
+rheum.arthr_male_pr <- read.csv(paste0(BASE, "/Greece/rheumatoid arthr-male-pr.csv"), stringsAsFactors = FALSE)
 head(rheum.arthr_male_pr)
 library(dplyr)
 
@@ -1953,7 +1955,7 @@ combined_plot2 + plot_annotation(
 #atopic dermatitis - Greece
 
 #first plot atopic male+prevalence
-atopic.derm_male_pr <- read.csv("C:\\Users\\30697\\Desktop\\Διπλωματική\\Greece\\atopic dermatitis-male-pr.csv", stringsAsFactors = FALSE)
+atopic.derm_male_pr <- read.csv(paste0(BASE, "/Greece/atopic dermatitis-male-pr.csv"), stringsAsFactors = FALSE)
 head(atopic.derm_male_pr)
 library(dplyr)
 
@@ -2030,7 +2032,7 @@ ggplot_atopic.derm_male_pr_summary2
 
 
 #second plot atopic male+incidence
-atopic.derm_male_inc <- read.csv("C:\\Users\\30697\\Desktop\\Διπλωματική\\Greece\\atopic dermatitis-male-inc.csv", stringsAsFactors = FALSE)
+atopic.derm_male_inc <- read.csv(paste0(BASE, "/Greece/atopic dermatitis-male-inc.csv"), stringsAsFactors = FALSE)
 head(atopic.derm_male_inc)
 library(dplyr)
 
@@ -2107,7 +2109,7 @@ ggplot_atopic.derm_male_inc_summary2
 
 
 #third plot atopic female+incidence
-atopic.derm_female_inc <- read.csv("C:\\Users\\30697\\Desktop\\Διπλωματική\\Greece\\atopic dermatitis-female-inc.csv", stringsAsFactors = FALSE)
+atopic.derm_female_inc <- read.csv(paste0(BASE, "/Greece/atopic dermatitis-female-inc.csv"), stringsAsFactors = FALSE)
 head(atopic.derm_female_inc)
 library(dplyr)
 
@@ -2184,7 +2186,7 @@ ggplot_atopic.derm_female_inc_summary2
 
 
 #fourth plot atopic female+prevalence
-atopic.derm_female_pr <- read.csv("C:\\Users\\30697\\Desktop\\Διπλωματική\\Greece\\atopic dermatitis-female-pr.csv", stringsAsFactors = FALSE)
+atopic.derm_female_pr <- read.csv(paste0(BASE, "/Greece/atopic dermatitis-female-pr.csv"), stringsAsFactors = FALSE)
 head(atopic.derm_female_pr)
 library(dplyr)
 
@@ -2288,7 +2290,7 @@ combined_plot2 + plot_annotation(
 #IBD -Greece
 
 #first plot IBD male+prevalence
-IBD_male_pr <- read.csv("C:\\Users\\30697\\Desktop\\Διπλωματική\\Greece\\IBD-male-pr.csv", stringsAsFactors = FALSE)
+IBD_male_pr <- read.csv(paste0(BASE, "/Greece/IBD-male-pr.csv"), stringsAsFactors = FALSE)
 head(IBD_male_pr)
 library(dplyr)
 
@@ -2364,7 +2366,7 @@ ggplot_IBD_male_pr_summary2
 
 
 #second plot IBD male+incidence
-IBD_male_inc <- read.csv("C:\\Users\\30697\\Desktop\\Διπλωματική\\Greece\\IBD-male-inc.csv", stringsAsFactors = FALSE)
+IBD_male_inc <- read.csv(paste0(BASE, "/Greece/IBD-male-inc.csv"), stringsAsFactors = FALSE)
 head(IBD_male_inc)
 library(dplyr)
 
@@ -2442,7 +2444,7 @@ ggplot_IBD_male_inc_summary2
 
 
 #third plot IBD female+incidence
-IBD_female_inc <- read.csv("C:\\Users\\30697\\Desktop\\Διπλωματική\\Greece\\IBD-female-inc.csv", stringsAsFactors = FALSE)
+IBD_female_inc <- read.csv(paste0(BASE, "/Greece/IBD-female-inc.csv"), stringsAsFactors = FALSE)
 head(IBD_female_inc)
 library(dplyr)
 
@@ -2518,7 +2520,7 @@ ggplot_IBD_female_inc_summary2
 
 
 #fourth plot IBD female+prevalence
-IBD_female_pr <- read.csv("C:\\Users\\30697\\Desktop\\Διπλωματική\\Greece\\IBD-female-pr.csv", stringsAsFactors = FALSE)
+IBD_female_pr <- read.csv(paste0(BASE, "/Greece/IBD-female-pr.csv"), stringsAsFactors = FALSE)
 head(IBD_female_pr)
 library(dplyr)
 
@@ -2623,7 +2625,7 @@ combined_plot2 + plot_annotation(
 #Multiple sclerosis - Greece
 
 #first plot sclerosis female+prevalence
-sclerosis_female_pr <- read.csv("C:\\Users\\30697\\Desktop\\Διπλωματική\\Greece\\sclerosis-female-pr.csv", stringsAsFactors = FALSE)
+sclerosis_female_pr <- read.csv(paste0(BASE, "/Greece/sclerosis-female-pr.csv"), stringsAsFactors = FALSE)
 head(sclerosis_female_pr)
 library(dplyr)
 
@@ -2702,7 +2704,7 @@ ggplot_sclerosis_female_pr_summary2
 
 
 #second plot sclerosis female+incidence
-sclerosis_female_inc <- read.csv("C:\\Users\\30697\\Desktop\\Διπλωματική\\Greece\\sclerosis-female-inc.csv", stringsAsFactors = FALSE)
+sclerosis_female_inc <- read.csv(paste0(BASE, "/Greece/sclerosis-female-inc.csv"), stringsAsFactors = FALSE)
 head(sclerosis_female_inc)
 library(dplyr)
 
@@ -2779,7 +2781,7 @@ ggplot_sclerosis_female_inc_summary2
 
 
 #third plot sclerosis male+incidence
-sclerosis_male_inc <- read.csv("C:\\Users\\30697\\Desktop\\Διπλωματική\\Greece\\sclerosis-male-inc.csv", stringsAsFactors = FALSE)
+sclerosis_male_inc <- read.csv(paste0(BASE, "/Greece/sclerosis-male-inc.csv"), stringsAsFactors = FALSE)
 head(sclerosis_male_inc)
 library(dplyr)
 
@@ -2856,7 +2858,7 @@ ggplot_sclerosis_male_inc_summary2
 
 
 #fourth plot sclerosis male+prevalence
-sclerosis_male_pr <- read.csv("C:\\Users\\30697\\Desktop\\Διπλωματική\\Greece\\sclerosis-male-pr.csv", stringsAsFactors = FALSE)
+sclerosis_male_pr <- read.csv(paste0(BASE, "/Greece/sclerosis-male-pr.csv"), stringsAsFactors = FALSE)
 head(sclerosis_male_pr)
 library(dplyr)
 
@@ -2964,7 +2966,7 @@ combined_plot2 + plot_annotation(
 #psoriasis - Greece
 
 #first plot psoriasis male+prevalence
-psoriasis_male_pr <- read.csv("C:\\Users\\30697\\Desktop\\Διπλωματική\\Greece\\psoriasis-male-pr.csv", stringsAsFactors = FALSE)
+psoriasis_male_pr <- read.csv(paste0(BASE, "/Greece/psoriasis-male-pr.csv"), stringsAsFactors = FALSE)
 head(psoriasis_male_pr)
 library(dplyr)
 
@@ -3038,7 +3040,7 @@ ggplot_psoriasis_male_pr_summary2 <- ggplot(psoriasis_male_pr_summary2, aes(x = 
 ggplot_psoriasis_male_pr_summary2
 
 #second plot psoriasis male+incidence
-psoriasis_male_inc <- read.csv("C:\\Users\\30697\\Desktop\\Διπλωματική\\Greece\\psoriasis-male-inc.csv", stringsAsFactors = FALSE)
+psoriasis_male_inc <- read.csv(paste0(BASE, "/Greece/psoriasis-male-inc.csv"), stringsAsFactors = FALSE)
 head(psoriasis_male_inc)
 library(dplyr)
 
@@ -3114,7 +3116,7 @@ ggplot_psoriasis_male_inc_summary2
 
 
 #third plot psoriasis female+incidence
-psoriasis_female_inc <- read.csv("C:\\Users\\30697\\Desktop\\Διπλωματική\\Greece\\psoriasis-female-inc.csv", stringsAsFactors = FALSE)
+psoriasis_female_inc <- read.csv(paste0(BASE, "/Greece/psoriasis-female-inc.csv"), stringsAsFactors = FALSE)
 head(psoriasis_female_inc)
 library(dplyr)
 
@@ -3192,7 +3194,7 @@ ggplot_psoriasis_female_inc_summary2
 
 
 #fourth plot psoriasis female+prevalence
-psoriasis_female_pr <- read.csv("C:\\Users\\30697\\Desktop\\Διπλωματική\\Greece\\psoriasis-female-pr.csv", stringsAsFactors = FALSE)
+psoriasis_female_pr <- read.csv(paste0(BASE, "/Greece/psoriasis-female-pr.csv"), stringsAsFactors = FALSE)
 head(psoriasis_female_pr)
 library(dplyr)
 
@@ -3296,7 +3298,7 @@ combined_plot2 + plot_annotation(
 #asthma - Norway
 
 #first plot male+prevalence
-asthma_male_pr <- read.csv("C:\\Users\\30697\\Desktop\\Διπλωματική\\Norway\\asthma-male-prevalence.csv", stringsAsFactors = FALSE)
+asthma_male_pr <- read.csv(paste0(BASE, "/Norway/asthma-male-prevalence.csv"), stringsAsFactors = FALSE)
 head(asthma_male_pr)
 
 library(dplyr)
@@ -3373,7 +3375,7 @@ ggplot_asthma_m_pr_summary2
 
 
 #second plot male+incidence
-asthma_male_inc <- read.csv("C:\\Users\\30697\\Desktop\\Διπλωματική\\Norway\\asthma-male-incidence.csv", stringsAsFactors = FALSE)
+asthma_male_inc <- read.csv(paste0(BASE, "/Norway/asthma-male-incidence.csv"), stringsAsFactors = FALSE)
 head(asthma_male_inc)
 library(dplyr)
 
@@ -3449,7 +3451,7 @@ ggplot_asthma_male_inc_summary2 <- ggplot(asthma_male_inc_summary2, aes(x = as.n
 ggplot_asthma_male_inc_summary2
 
 #third plot female+incidence
-asthma_female_inc <- read.csv("C:\\Users\\30697\\Desktop\\Διπλωματική\\Norway\\asthma-female-incidence.csv", stringsAsFactors = FALSE)
+asthma_female_inc <- read.csv(paste0(BASE, "/Norway/asthma-female-incidence.csv"), stringsAsFactors = FALSE)
 head(asthma_female_inc)
 library(dplyr)
 
@@ -3527,7 +3529,7 @@ ggplot_asthma_female_inc_summary2
 
 
 #fourth plot female+prevalence
-asthma_female_pr <- read.csv("C:\\Users\\30697\\Desktop\\Διπλωματική\\Norway\\asthma-female-prevalence.csv", stringsAsFactors = FALSE)
+asthma_female_pr <- read.csv(paste0(BASE, "/Norway/asthma-female-prevalence.csv"), stringsAsFactors = FALSE)
 head(asthma_female_pr)
 library(dplyr)
 
@@ -3630,7 +3632,7 @@ combined_plot2 + plot_annotation(
 #rheumatoid arthritis - Norway
 
 #first rheumatoid plot female+prevalence 
-rheum.arthr_female_pr <- read.csv("C:\\Users\\30697\\Desktop\\Διπλωματική\\Norway\\rheumatoid arthr-female-pr.csv", stringsAsFactors = FALSE)
+rheum.arthr_female_pr <- read.csv(paste0(BASE, "/Norway/rheumatoid arthr-female-pr.csv"), stringsAsFactors = FALSE)
 head(rheum.arthr_female_pr)
 library(dplyr)
 
@@ -3705,7 +3707,7 @@ ggplot_rheum.arthr_female_pr_summary2
 
 
 #second plot rheumatoid female+incidence
-rheum.arthr_female_inc <- read.csv("C:\\Users\\30697\\Desktop\\Διπλωματική\\Norway\\rheumatoid arthr-female-inc.csv", stringsAsFactors = FALSE)
+rheum.arthr_female_inc <- read.csv(paste0(BASE, "/Norway/rheumatoid arthr-female-inc.csv"), stringsAsFactors = FALSE)
 head(rheum.arthr_female_inc)
 library(dplyr)
 
@@ -3780,7 +3782,7 @@ ggplot_rheum.arthr_female_inc_summary2
 
 
 #third plot rheumatoid male+incidence
-rheum.arthr_male_inc <- read.csv("C:\\Users\\30697\\Desktop\\Διπλωματική\\Norway\\rheumatoid arthr-male-inc.csv", stringsAsFactors = FALSE)
+rheum.arthr_male_inc <- read.csv(paste0(BASE, "/Norway/rheumatoid arthr-male-inc.csv"), stringsAsFactors = FALSE)
 head(rheum.arthr_male_inc)
 library(dplyr)
 
@@ -3855,7 +3857,7 @@ ggplot_rheum.arthr_male_inc_summary2
 
 
 #fourth plot rheumatoid male+prevalence
-rheum.arthr_male_pr <- read.csv("C:\\Users\\30697\\Desktop\\Διπλωματική\\Norway\\rheumatoid arthr-male-pr.csv", stringsAsFactors = FALSE)
+rheum.arthr_male_pr <- read.csv(paste0(BASE, "/Norway/rheumatoid arthr-male-pr.csv"), stringsAsFactors = FALSE)
 head(rheum.arthr_male_pr)
 library(dplyr)
 
@@ -3957,7 +3959,7 @@ combined_plot2 + plot_annotation(
 ```{r}
 #atopic dermatitis - Norway
 #first plot atopic male+prevalence
-atopic.derm_male_pr <- read.csv("C:\\Users\\30697\\Desktop\\Διπλωματική\\Norway\\atopic dermatitis-male-pr.csv", stringsAsFactors = FALSE)
+atopic.derm_male_pr <- read.csv(paste0(BASE, "/Norway/atopic dermatitis-male-pr.csv"), stringsAsFactors = FALSE)
 head(atopic.derm_male_pr)
 library(dplyr)
 
@@ -4033,7 +4035,7 @@ ggplot_atopic.derm_male_pr_summary2
 
 
 #second plot atopic male+incidence
-atopic.derm_male_inc <- read.csv("C:\\Users\\30697\\Desktop\\Διπλωματική\\Norway\\atopic dermatitis-male-inc.csv", stringsAsFactors = FALSE)
+atopic.derm_male_inc <- read.csv(paste0(BASE, "/Norway/atopic dermatitis-male-inc.csv"), stringsAsFactors = FALSE)
 head(atopic.derm_male_inc)
 library(dplyr)
 
@@ -4110,7 +4112,7 @@ ggplot_atopic.derm_male_inc_summary2
 
 
 #third plot atopic female+incidence
-atopic.derm_female_inc <- read.csv("C:\\Users\\30697\\Desktop\\Διπλωματική\\Norway\\atopic dermatitis-female-inc.csv", stringsAsFactors = FALSE)
+atopic.derm_female_inc <- read.csv(paste0(BASE, "/Norway/atopic dermatitis-female-inc.csv"), stringsAsFactors = FALSE)
 head(atopic.derm_female_inc)
 library(dplyr)
 
@@ -4185,7 +4187,7 @@ ggplot_atopic.derm_female_inc_summary2
 
 
 #fourth plot atopic female+prevalence
-atopic.derm_female_pr <- read.csv("C:\\Users\\30697\\Desktop\\Διπλωματική\\Norway\\atopic dermatitis-female-pr.csv", stringsAsFactors = FALSE)
+atopic.derm_female_pr <- read.csv(paste0(BASE, "/Norway/atopic dermatitis-female-pr.csv"), stringsAsFactors = FALSE)
 head(atopic.derm_female_pr)
 library(dplyr)
 
@@ -4287,7 +4289,7 @@ combined_plot2 + plot_annotation(
 ```{r}
 #IBD - Norway
 #first plot IBD male+prevalence
-IBD_male_pr <- read.csv("C:\\Users\\30697\\Desktop\\Διπλωματική\\Norway\\IBD-male-pr.csv", stringsAsFactors = FALSE)
+IBD_male_pr <- read.csv(paste0(BASE, "/Norway/IBD-male-pr.csv"), stringsAsFactors = FALSE)
 head(IBD_male_pr)
 library(dplyr)
 
@@ -4364,7 +4366,7 @@ ggplot_IBD_male_pr_summary2
 
 
 #second plot IBD male+incidence
-IBD_male_inc <- read.csv("C:\\Users\\30697\\Desktop\\Διπλωματική\\Norway\\IBD-male-inc.csv", stringsAsFactors = FALSE)
+IBD_male_inc <- read.csv(paste0(BASE, "/Norway/IBD-male-inc.csv"), stringsAsFactors = FALSE)
 head(IBD_male_inc)
 library(dplyr)
 
@@ -4440,7 +4442,7 @@ ggplot_IBD_male_inc_summary2
 
 
 #third plot IBD female+incidence
-IBD_female_inc <- read.csv("C:\\Users\\30697\\Desktop\\Διπλωματική\\Norway\\IBD-female-inc.csv", stringsAsFactors = FALSE)
+IBD_female_inc <- read.csv(paste0(BASE, "/Norway/IBD-female-inc.csv"), stringsAsFactors = FALSE)
 head(IBD_female_inc)
 library(dplyr)
 
@@ -4516,7 +4518,7 @@ ggplot_IBD_female_inc_summary2
 
 
 #fourth plot IBD female+prevalence
-IBD_female_pr <- read.csv("C:\\Users\\30697\\Desktop\\Διπλωματική\\Norway\\IBD-female-pr.csv", stringsAsFactors = FALSE)
+IBD_female_pr <- read.csv(paste0(BASE, "/Norway/IBD-female-pr.csv"), stringsAsFactors = FALSE)
 head(IBD_female_pr)
 library(dplyr)
 
@@ -4619,7 +4621,7 @@ combined_plot2 + plot_annotation(
 #Multiple sclerosis - Norway
 
 #first plot sclerosis female+prevalence
-sclerosis_female_pr <- read.csv("C:\\Users\\30697\\Desktop\\Διπλωματική\\Norway\\sclerosis-female-pr.csv", stringsAsFactors = FALSE)
+sclerosis_female_pr <- read.csv(paste0(BASE, "/Norway/sclerosis-female-pr.csv"), stringsAsFactors = FALSE)
 head(sclerosis_female_pr)
 library(dplyr)
 
@@ -4694,7 +4696,7 @@ ggplot_sclerosis_female_pr_summary2
 
 
 #second plot sclerosis female+incidence
-sclerosis_female_inc <- read.csv("C:\\Users\\30697\\Desktop\\Διπλωματική\\Norway\\sclerosis-female-inc.csv", stringsAsFactors = FALSE)
+sclerosis_female_inc <- read.csv(paste0(BASE, "/Norway/sclerosis-female-inc.csv"), stringsAsFactors = FALSE)
 head(sclerosis_female_inc)
 library(dplyr)
 
@@ -4768,7 +4770,7 @@ ggplot_sclerosis_female_inc_summary2
 
 
 #third plot sclerosis male+incidence
-sclerosis_male_inc <- read.csv("C:\\Users\\30697\\Desktop\\Διπλωματική\\Norway\\sclerosis-male-inc.csv", stringsAsFactors = FALSE)
+sclerosis_male_inc <- read.csv(paste0(BASE, "/Norway/sclerosis-male-inc.csv"), stringsAsFactors = FALSE)
 head(sclerosis_male_inc)
 library(dplyr)
 
@@ -4841,7 +4843,7 @@ ggplot_sclerosis_male_inc_summary2 <- ggplot(sclerosis_male_inc_summary2, aes(x 
 ggplot_sclerosis_male_inc_summary2
 
 #fourth plot sclerosis male+prevalence
-sclerosis_male_pr <- read.csv("C:\\Users\\30697\\Desktop\\Διπλωματική\\Norway\\sclerosis-male-pr.csv", stringsAsFactors = FALSE)
+sclerosis_male_pr <- read.csv(paste0(BASE, "/Norway/sclerosis-male-pr.csv"), stringsAsFactors = FALSE)
 head(sclerosis_male_pr)
 library(dplyr)
 
@@ -4942,7 +4944,7 @@ combined_plot2 + plot_annotation(
 ```{r}
 #psoriasis - Norway
 #first plot psoriasis male+prevalence
-psoriasis_male_pr <- read.csv("C:\\Users\\30697\\Desktop\\Διπλωματική\\Norway\\psoriasis-male-pr.csv", stringsAsFactors = FALSE)
+psoriasis_male_pr <- read.csv(paste0(BASE, "/Norway/psoriasis-male-pr.csv"), stringsAsFactors = FALSE)
 head(psoriasis_male_pr)
 library(dplyr)
 
@@ -5015,7 +5017,7 @@ ggplot_psoriasis_male_pr_summary2 <- ggplot(psoriasis_male_pr_summary2, aes(x = 
 ggplot_psoriasis_male_pr_summary2
 
 #second plot psoriasis male+incidence
-psoriasis_male_inc <- read.csv("C:\\Users\\30697\\Desktop\\Διπλωματική\\Norway\\psoriasis-male-inc.csv", stringsAsFactors = FALSE)
+psoriasis_male_inc <- read.csv(paste0(BASE, "/Norway/psoriasis-male-inc.csv"), stringsAsFactors = FALSE)
 head(psoriasis_male_inc)
 library(dplyr)
 
@@ -5089,7 +5091,7 @@ ggplot_psoriasis_male_inc_summary2
 
 
 #third plot psoriasis female+incidence
-psoriasis_female_inc <- read.csv("C:\\Users\\30697\\Desktop\\Διπλωματική\\Norway\\psoriasis-female-inc.csv", stringsAsFactors = FALSE)
+psoriasis_female_inc <- read.csv(paste0(BASE, "/Norway/psoriasis-female-inc.csv"), stringsAsFactors = FALSE)
 head(psoriasis_female_inc)
 library(dplyr)
 
@@ -5164,7 +5166,7 @@ ggplot_psoriasis_female_inc_summary2
 
 
 #fourth plot psoriasis female+prevalence
-psoriasis_female_pr <- read.csv("C:\\Users\\30697\\Desktop\\Διπλωματική\\Norway\\psoriasis-female-pr.csv", stringsAsFactors = FALSE)
+psoriasis_female_pr <- read.csv(paste0(BASE, "/Norway/psoriasis-female-pr.csv"), stringsAsFactors = FALSE)
 head(psoriasis_female_pr)
 library(dplyr)
 
@@ -5265,7 +5267,7 @@ combined_plot2 + plot_annotation(
 #asthma - Portugal
 
 #first plot male+prevalence
-asthma_male_pr <- read.csv("C:\\Users\\30697\\Desktop\\Διπλωματική\\Portugal\\asthma-male-prevalence.csv", stringsAsFactors = FALSE)
+asthma_male_pr <- read.csv(paste0(BASE, "/Portugal/asthma-male-prevalence.csv"), stringsAsFactors = FALSE)
 head(asthma_male_pr)
 
 library(dplyr)
@@ -5340,7 +5342,7 @@ ggplot_asthma_m_pr_summary2
 
 
 #second plot male+incidence
-asthma_male_inc <- read.csv("C:\\Users\\30697\\Desktop\\Διπλωματική\\Portugal\\asthma-male-incidence.csv", stringsAsFactors = FALSE)
+asthma_male_inc <- read.csv(paste0(BASE, "/Portugal/asthma-male-incidence.csv"), stringsAsFactors = FALSE)
 head(asthma_male_inc)
 library(dplyr)
 
@@ -5416,7 +5418,7 @@ ggplot_asthma_male_inc_summary2
 
 
 #third plot female+incidence
-asthma_female_inc <- read.csv("C:\\Users\\30697\\Desktop\\Διπλωματική\\Portugal\\asthma-female-incidence.csv", stringsAsFactors = FALSE)
+asthma_female_inc <- read.csv(paste0(BASE, "/Portugal/asthma-female-incidence.csv"), stringsAsFactors = FALSE)
 head(asthma_female_inc)
 library(dplyr)
 
@@ -5490,7 +5492,7 @@ ggplot_asthma_female_inc_summary2
 
 
 #fourth plot female+prevalence
-asthma_female_pr <- read.csv("C:\\Users\\30697\\Desktop\\Διπλωματική\\Portugal\\asthma-female-prevalence.csv", stringsAsFactors = FALSE)
+asthma_female_pr <- read.csv(paste0(BASE, "/Portugal/asthma-female-prevalence.csv"), stringsAsFactors = FALSE)
 head(asthma_female_pr)
 library(dplyr)
 
@@ -5592,7 +5594,7 @@ combined_plot2 + plot_annotation(
 #rheumatoid arthritis - Portugal
 
 #first rheumatoid plot female+prevalence 
-rheum.arthr_female_pr <- read.csv("C:\\Users\\30697\\Desktop\\Διπλωματική\\Portugal\\rheumatoid arthr-female-pr.csv", stringsAsFactors = FALSE)
+rheum.arthr_female_pr <- read.csv(paste0(BASE, "/Portugal/rheumatoid arthr-female-pr.csv"), stringsAsFactors = FALSE)
 head(rheum.arthr_female_pr)
 library(dplyr)
 
@@ -5667,7 +5669,7 @@ ggplot_rheum.arthr_female_pr_summary2
 
 
 #second plot rheumatoid female+incidence
-rheum.arthr_female_inc <- read.csv("C:\\Users\\30697\\Desktop\\Διπλωματική\\Portugal\\rheumatoid arthr-female-inc.csv", stringsAsFactors = FALSE)
+rheum.arthr_female_inc <- read.csv(paste0(BASE, "/Portugal/rheumatoid arthr-female-inc.csv"), stringsAsFactors = FALSE)
 head(rheum.arthr_female_inc)
 library(dplyr)
 
@@ -5741,7 +5743,7 @@ ggplot_rheum.arthr_female_inc_summary2
 
 
 #third plot rheumatoid male+incidence
-rheum.arthr_male_inc <- read.csv("C:\\Users\\30697\\Desktop\\Διπλωματική\\Portugal\\rheumatoid arthr-male-inc.csv", stringsAsFactors = FALSE)
+rheum.arthr_male_inc <- read.csv(paste0(BASE, "/Portugal/rheumatoid arthr-male-inc.csv"), stringsAsFactors = FALSE)
 head(rheum.arthr_male_inc)
 library(dplyr)
 
@@ -5815,7 +5817,7 @@ ggplot_rheum.arthr_male_inc_summary2
 
 
 #fourth plot rheumatoid male+prevalence
-rheum.arthr_male_pr <- read.csv("C:\\Users\\30697\\Desktop\\Διπλωματική\\Portugal\\rheumatoid arthr-male-pr.csv", stringsAsFactors = FALSE)
+rheum.arthr_male_pr <- read.csv(paste0(BASE, "/Portugal/rheumatoid arthr-male-pr.csv"), stringsAsFactors = FALSE)
 head(rheum.arthr_male_pr)
 library(dplyr)
 
@@ -5917,7 +5919,7 @@ combined_plot2 + plot_annotation(
 #atopic dermatitis - Portugal
 
 #first plot atopic male+prevalence
-atopic.derm_male_pr <- read.csv("C:\\Users\\30697\\Desktop\\Διπλωματική\\Portugal\\atopic dermatitis-male-pr.csv", stringsAsFactors = FALSE)
+atopic.derm_male_pr <- read.csv(paste0(BASE, "/Portugal/atopic dermatitis-male-pr.csv"), stringsAsFactors = FALSE)
 head(atopic.derm_male_pr)
 library(dplyr)
 
@@ -5991,7 +5993,7 @@ ggplot_atopic.derm_male_pr_summary2
 
 
 #second plot atopic male+incidence
-atopic.derm_male_inc <- read.csv("C:\\Users\\30697\\Desktop\\Διπλωματική\\Portugal\\atopic dermatidis-male-inc.csv", stringsAsFactors = FALSE)
+atopic.derm_male_inc <- read.csv(paste0(BASE, "/Portugal/atopic dermatidis-male-inc.csv"), stringsAsFactors = FALSE)
 head(atopic.derm_male_inc)
 library(dplyr)
 
@@ -6065,7 +6067,7 @@ ggplot_atopic.derm_male_inc_summary2
 
 
 #third plot atopic female+incidence
-atopic.derm_female_inc <- read.csv("C:\\Users\\30697\\Desktop\\Διπλωματική\\Portugal\\atopic dermatidis-female-inc.csv", stringsAsFactors = FALSE)
+atopic.derm_female_inc <- read.csv(paste0(BASE, "/Portugal/atopic dermatidis-female-inc.csv"), stringsAsFactors = FALSE)
 head(atopic.derm_female_inc)
 library(dplyr)
 
@@ -6139,7 +6141,7 @@ ggplot_atopic.derm_female_inc_summary2
 
 
 #fourth plot atopic female+prevalence
-atopic.derm_female_pr <- read.csv("C:\\Users\\30697\\Desktop\\Διπλωματική\\Portugal\\atopic dermatidis-female-pr.csv", stringsAsFactors = FALSE)
+atopic.derm_female_pr <- read.csv(paste0(BASE, "/Portugal/atopic dermatidis-female-pr.csv"), stringsAsFactors = FALSE)
 head(atopic.derm_female_pr)
 library(dplyr)
 
@@ -6240,7 +6242,7 @@ combined_plot2 + plot_annotation(
 #IBD - Portugal
 
 #first plot IBD male+prevalence
-IBD_male_pr <- read.csv("C:\\Users\\30697\\Desktop\\Διπλωματική\\Portugal\\IBD-male-pr.csv", stringsAsFactors = FALSE)
+IBD_male_pr <- read.csv(paste0(BASE, "/Portugal/IBD-male-pr.csv"), stringsAsFactors = FALSE)
 head(IBD_male_pr)
 library(dplyr)
 
@@ -6316,7 +6318,7 @@ ggplot_IBD_male_pr_summary2
 
 
 #second plot IBD male+incidence
-IBD_male_inc <- read.csv("C:\\Users\\30697\\Desktop\\Διπλωματική\\Portugal\\IBD-male-inc.csv", stringsAsFactors = FALSE)
+IBD_male_inc <- read.csv(paste0(BASE, "/Portugal/IBD-male-inc.csv"), stringsAsFactors = FALSE)
 head(IBD_male_inc)
 library(dplyr)
 
@@ -6390,7 +6392,7 @@ ggplot_IBD_male_inc_summary2
 
 
 #third plot IBD female+incidence
-IBD_female_inc <- read.csv("C:\\Users\\30697\\Desktop\\Διπλωματική\\Portugal\\IBD-female-inc.csv", stringsAsFactors = FALSE)
+IBD_female_inc <- read.csv(paste0(BASE, "/Portugal/IBD-female-inc.csv"), stringsAsFactors = FALSE)
 head(IBD_female_inc)
 library(dplyr)
 
@@ -6465,7 +6467,7 @@ ggplot_IBD_female_inc_summary2
 
 
 #fourth plot IBD female+prevalence
-IBD_female_pr <- read.csv("C:\\Users\\30697\\Desktop\\Διπλωματική\\Portugal\\IBD-female-pr.csv", stringsAsFactors = FALSE)
+IBD_female_pr <- read.csv(paste0(BASE, "/Portugal/IBD-female-pr.csv"), stringsAsFactors = FALSE)
 head(IBD_female_pr)
 library(dplyr)
 
@@ -6568,7 +6570,7 @@ combined_plot2 + plot_annotation(
 #Multiple sclerosis - Portugal
 
 #first plot sclerosis female+prevalence
-sclerosis_female_pr <- read.csv("C:\\Users\\30697\\Desktop\\Διπλωματική\\Portugal\\sclerosis-female-pr.csv", stringsAsFactors = FALSE)
+sclerosis_female_pr <- read.csv(paste0(BASE, "/Portugal/sclerosis-female-pr.csv"), stringsAsFactors = FALSE)
 head(sclerosis_female_pr)
 library(dplyr)
 
@@ -6642,7 +6644,7 @@ ggplot_sclerosis_female_pr_summary2
 
 
 #second plot sclerosis female+incidence
-sclerosis_female_inc <- read.csv("C:\\Users\\30697\\Desktop\\Διπλωματική\\Portugal\\sclerosis-female-inc.csv", stringsAsFactors = FALSE)
+sclerosis_female_inc <- read.csv(paste0(BASE, "/Portugal/sclerosis-female-inc.csv"), stringsAsFactors = FALSE)
 head(sclerosis_female_inc)
 library(dplyr)
 
@@ -6717,7 +6719,7 @@ ggplot_sclerosis_female_inc_summary2
 
 
 #third plot sclerosis male+incidence
-sclerosis_male_inc <- read.csv("C:\\Users\\30697\\Desktop\\Διπλωματική\\Portugal\\sclerosis-male-inc.csv", stringsAsFactors = FALSE)
+sclerosis_male_inc <- read.csv(paste0(BASE, "/Portugal/sclerosis-male-inc.csv"), stringsAsFactors = FALSE)
 head(sclerosis_male_inc)
 library(dplyr)
 
@@ -6792,7 +6794,7 @@ ggplot_sclerosis_male_inc_summary2
 
 
 #fourth plot sclerosis male+prevalence
-sclerosis_male_pr <- read.csv("C:\\Users\\30697\\Desktop\\Διπλωματική\\Portugal\\sclerosis-male-pr.csv", stringsAsFactors = FALSE)
+sclerosis_male_pr <- read.csv(paste0(BASE, "/Portugal/sclerosis-male-pr.csv"), stringsAsFactors = FALSE)
 head(sclerosis_male_pr)
 library(dplyr)
 
@@ -6895,7 +6897,7 @@ combined_plot2 + plot_annotation(
 #psoriasis - Portugal
 
 #first plot psoriasis male+prevalence
-psoriasis_male_pr <- read.csv("C:\\Users\\30697\\Desktop\\Διπλωματική\\Portugal\\psoriasis-male-pr.csv", stringsAsFactors = FALSE)
+psoriasis_male_pr <- read.csv(paste0(BASE, "/Portugal/psoriasis-male-pr.csv"), stringsAsFactors = FALSE)
 head(psoriasis_male_pr)
 library(dplyr)
 
@@ -6969,7 +6971,7 @@ ggplot_psoriasis_male_pr_summary2
 
 
 #second plot psoriasis male+incidence
-psoriasis_male_inc <- read.csv("C:\\Users\\30697\\Desktop\\Διπλωματική\\Portugal\\psoriasis-male-inc.csv", stringsAsFactors = FALSE)
+psoriasis_male_inc <- read.csv(paste0(BASE, "/Portugal/psoriasis-male-inc.csv"), stringsAsFactors = FALSE)
 head(psoriasis_male_inc)
 library(dplyr)
 
@@ -7045,7 +7047,7 @@ ggplot_psoriasis_male_inc_summary2
 
 
 #third plot psoriasis female+incidence
-psoriasis_female_inc <- read.csv("C:\\Users\\30697\\Desktop\\Διπλωματική\\Portugal\\psoriasis-female-inc.csv", stringsAsFactors = FALSE)
+psoriasis_female_inc <- read.csv(paste0(BASE, "/Portugal/psoriasis-female-inc.csv"), stringsAsFactors = FALSE)
 head(psoriasis_female_inc)
 library(dplyr)
 
@@ -7121,7 +7123,7 @@ ggplot_psoriasis_female_inc_summary2
 
 
 #fourth plot psoriasis female+prevalence
-psoriasis_female_pr <- read.csv("C:\\Users\\30697\\Desktop\\Διπλωματική\\Portugal\\psoriasis-female-pr.csv", stringsAsFactors = FALSE)
+psoriasis_female_pr <- read.csv(paste0(BASE, "/Portugal/psoriasis-female-pr.csv"), stringsAsFactors = FALSE)
 head(psoriasis_female_pr)
 library(dplyr)
 
@@ -7222,7 +7224,7 @@ combined_plot2 + plot_annotation(
 #asthma - Sweden
 
 #first plot male+prevalence
-asthma_male_pr <- read.csv("C:\\Users\\30697\\Desktop\\Διπλωματική\\Sweden\\asthma-male-prevalence.csv", stringsAsFactors = FALSE)
+asthma_male_pr <- read.csv(paste0(BASE, "/Sweden/asthma-male-prevalence.csv"), stringsAsFactors = FALSE)
 head(asthma_male_pr)
 
 library(dplyr)
@@ -7297,7 +7299,7 @@ ggplot_asthma_m_pr_summary2
 
 
 #second plot male+incidence
-asthma_male_inc <- read.csv("C:\\Users\\30697\\Desktop\\Διπλωματική\\Sweden\\asthma-male-incidence.csv", stringsAsFactors = FALSE)
+asthma_male_inc <- read.csv(paste0(BASE, "/Sweden/asthma-male-incidence.csv"), stringsAsFactors = FALSE)
 head(asthma_male_inc)
 library(dplyr)
 
@@ -7373,7 +7375,7 @@ ggplot_asthma_male_inc_summary2
 
 
 #third plot female+incidence
-asthma_female_inc <- read.csv("C:\\Users\\30697\\Desktop\\Διπλωματική\\Sweden\\asthma-female-incidence.csv", stringsAsFactors = FALSE)
+asthma_female_inc <- read.csv(paste0(BASE, "/Sweden/asthma-female-incidence.csv"), stringsAsFactors = FALSE)
 head(asthma_female_inc)
 library(dplyr)
 
@@ -7447,7 +7449,7 @@ ggplot_asthma_female_inc_summary2
 
 
 #fourth plot female+prevalence
-asthma_female_pr <- read.csv("C:\\Users\\30697\\Desktop\\Διπλωματική\\Sweden\\asthma-female-prevalence.csv", stringsAsFactors = FALSE)
+asthma_female_pr <- read.csv(paste0(BASE, "/Sweden/asthma-female-prevalence.csv"), stringsAsFactors = FALSE)
 head(asthma_female_pr)
 library(dplyr)
 
@@ -7549,7 +7551,7 @@ combined_plot2 + plot_annotation(
 #rheumatoid arthritis -Sweden
 
 #first rheumatoid plot female+prevalence 
-rheum.arthr_female_pr <- read.csv("C:\\Users\\30697\\Desktop\\Διπλωματική\\Sweden\\rheumatoid arthr-female-pr.csv", stringsAsFactors = FALSE)
+rheum.arthr_female_pr <- read.csv(paste0(BASE, "/Sweden/rheumatoid arthr-female-pr.csv"), stringsAsFactors = FALSE)
 head(rheum.arthr_female_pr)
 library(dplyr)
 
@@ -7623,7 +7625,7 @@ ggplot_rheum.arthr_female_pr_summary2
 
 
 #second plot rheumatoid female+incidence
-rheum.arthr_female_inc <- read.csv("C:\\Users\\30697\\Desktop\\Διπλωματική\\Sweden\\rheumatoid arthr-female-inc.csv", stringsAsFactors = FALSE)
+rheum.arthr_female_inc <- read.csv(paste0(BASE, "/Sweden/rheumatoid arthr-female-inc.csv"), stringsAsFactors = FALSE)
 head(rheum.arthr_female_inc)
 library(dplyr)
 
@@ -7697,7 +7699,7 @@ ggplot_rheum.arthr_female_inc_summary2
 
 
 #third plot rheumatoid male+incidence
-rheum.arthr_male_inc <- read.csv("C:\\Users\\30697\\Desktop\\Διπλωματική\\Sweden\\rheumatoid arthr-male-inc.csv", stringsAsFactors = FALSE)
+rheum.arthr_male_inc <- read.csv(paste0(BASE, "/Sweden/rheumatoid arthr-male-inc.csv"), stringsAsFactors = FALSE)
 head(rheum.arthr_male_inc)
 library(dplyr)
 
@@ -7771,7 +7773,7 @@ ggplot_rheum.arthr_male_inc_summary2
 
 
 #fourth plot rheumatoid male+prevalence
-rheum.arthr_male_pr <- read.csv("C:\\Users\\30697\\Desktop\\Διπλωματική\\Sweden\\rheumatoid arthr-male-pr.csv", stringsAsFactors = FALSE)
+rheum.arthr_male_pr <- read.csv(paste0(BASE, "/Sweden/rheumatoid arthr-male-pr.csv"), stringsAsFactors = FALSE)
 head(rheum.arthr_male_pr)
 library(dplyr)
 
@@ -7872,7 +7874,7 @@ combined_plot2 + plot_annotation(
 #atopic dermatitis- Sweden
 
 #first plot atopic male+prevalence
-atopic.derm_male_pr <- read.csv("C:\\Users\\30697\\Desktop\\Διπλωματική\\Sweden\\atopic dermatitis-male-pr.csv", stringsAsFactors = FALSE)
+atopic.derm_male_pr <- read.csv(paste0(BASE, "/Sweden/atopic dermatitis-male-pr.csv"), stringsAsFactors = FALSE)
 head(atopic.derm_male_pr)
 library(dplyr)
 
@@ -7946,7 +7948,7 @@ ggplot_atopic.derm_male_pr_summary2
 
 
 #second plot atopic male+incidence
-atopic.derm_male_inc <- read.csv("C:\\Users\\30697\\Desktop\\Διπλωματική\\Sweden\\atopic dermatitis-male-inc.csv", stringsAsFactors = FALSE)
+atopic.derm_male_inc <- read.csv(paste0(BASE, "/Sweden/atopic dermatitis-male-inc.csv"), stringsAsFactors = FALSE)
 head(atopic.derm_male_inc)
 library(dplyr)
 
@@ -8021,7 +8023,7 @@ ggplot_atopic.derm_male_inc_summary2
 
 
 #third plot atopic female+incidence
-atopic.derm_female_inc <- read.csv("C:\\Users\\30697\\Desktop\\Διπλωματική\\Sweden\\atopic dermatitis-female-inc.csv", stringsAsFactors = FALSE)
+atopic.derm_female_inc <- read.csv(paste0(BASE, "/Sweden/atopic dermatitis-female-inc.csv"), stringsAsFactors = FALSE)
 head(atopic.derm_female_inc)
 library(dplyr)
 
@@ -8096,7 +8098,7 @@ ggplot_atopic.derm_female_inc_summary2
 
 
 #fourth plot atopic female+prevalence
-atopic.derm_female_pr <- read.csv("C:\\Users\\30697\\Desktop\\Διπλωματική\\Sweden\\atopic dermatitis-female-pr.csv", stringsAsFactors = FALSE)
+atopic.derm_female_pr <- read.csv(paste0(BASE, "/Sweden/atopic dermatitis-female-pr.csv"), stringsAsFactors = FALSE)
 head(atopic.derm_female_pr)
 library(dplyr)
 
@@ -8199,7 +8201,7 @@ combined_plot2 + plot_annotation(
 #IBD - Sweden
 
 #first plot IBD male+prevalence
-IBD_male_pr <- read.csv("C:\\Users\\30697\\Desktop\\Διπλωματική\\Sweden\\IBD-male-pr.csv", stringsAsFactors = FALSE)
+IBD_male_pr <- read.csv(paste0(BASE, "/Sweden/IBD-male-pr.csv"), stringsAsFactors = FALSE)
 head(IBD_male_pr)
 library(dplyr)
 
@@ -8273,7 +8275,7 @@ ggplot_IBD_male_pr_summary2
 
 
 #second plot IBD male+incidence
-IBD_male_inc <- read.csv("C:\\Users\\30697\\Desktop\\Διπλωματική\\Sweden\\IBD-male-inc.csv", stringsAsFactors = FALSE)
+IBD_male_inc <- read.csv(paste0(BASE, "/Sweden/IBD-male-inc.csv"), stringsAsFactors = FALSE)
 head(IBD_male_inc)
 library(dplyr)
 
@@ -8349,7 +8351,7 @@ ggplot_IBD_male_inc_summary2
 
 
 #third plot IBD female+incidence
-IBD_female_inc <- read.csv("C:\\Users\\30697\\Desktop\\Διπλωματική\\Sweden\\IBD-female-inc.csv", stringsAsFactors = FALSE)
+IBD_female_inc <- read.csv(paste0(BASE, "/Sweden/IBD-female-inc.csv"), stringsAsFactors = FALSE)
 head(IBD_female_inc)
 library(dplyr)
 
@@ -8422,7 +8424,7 @@ ggplot_IBD_female_inc_summary2 <- ggplot(IBD_female_inc_summary2, aes(x = as.num
 ggplot_IBD_female_inc_summary2
 
 #fourth plot IBD female+prevalence
-IBD_female_pr <- read.csv("C:\\Users\\30697\\Desktop\\Διπλωματική\\Sweden\\IBD-female-pr.csv", stringsAsFactors = FALSE)
+IBD_female_pr <- read.csv(paste0(BASE, "/Sweden/IBD-female-pr.csv"), stringsAsFactors = FALSE)
 head(IBD_female_pr)
 library(dplyr)
 
@@ -8524,7 +8526,7 @@ combined_plot2 + plot_annotation(
 #Multiple sclerosis - Sweden
 
 #first plot sclerosis female+prevalence
-sclerosis_female_pr <- read.csv("C:\\Users\\30697\\Desktop\\Διπλωματική\\Sweden\\sclerosis-female-pr.csv", stringsAsFactors = FALSE)
+sclerosis_female_pr <- read.csv(paste0(BASE, "/Sweden/sclerosis-female-pr.csv"), stringsAsFactors = FALSE)
 head(sclerosis_female_pr)
 library(dplyr)
 
@@ -8599,7 +8601,7 @@ ggplot_sclerosis_female_pr_summary2
 
 
 #second plot sclerosis female+incidence
-sclerosis_female_inc <- read.csv("C:\\Users\\30697\\Desktop\\Διπλωματική\\Sweden\\sclerosis-female-inc.csv", stringsAsFactors = FALSE)
+sclerosis_female_inc <- read.csv(paste0(BASE, "/Sweden/sclerosis-female-inc.csv"), stringsAsFactors = FALSE)
 head(sclerosis_female_inc)
 library(dplyr)
 
@@ -8673,7 +8675,7 @@ ggplot_sclerosis_female_inc_summary2
 
 
 #third plot sclerosis male+incidence
-sclerosis_male_inc <- read.csv("C:\\Users\\30697\\Desktop\\Διπλωματική\\Sweden\\sclerosis-male-inc.csv", stringsAsFactors = FALSE)
+sclerosis_male_inc <- read.csv(paste0(BASE, "/Sweden/sclerosis-male-inc.csv"), stringsAsFactors = FALSE)
 head(sclerosis_male_inc)
 library(dplyr)
 
@@ -8748,7 +8750,7 @@ ggplot_sclerosis_male_inc_summary2
 
 
 #fourth plot sclerosis male+prevalence
-sclerosis_male_pr <- read.csv("C:\\Users\\30697\\Desktop\\Διπλωματική\\Sweden\\sclerosis-male-pr.csv", stringsAsFactors = FALSE)
+sclerosis_male_pr <- read.csv(paste0(BASE, "/Sweden/sclerosis-male-pr.csv"), stringsAsFactors = FALSE)
 head(sclerosis_male_pr)
 library(dplyr)
 
@@ -8849,7 +8851,7 @@ combined_plot2 + plot_annotation(
 #psoriasis - Sweden
 
 #first plot psoriasis male+prevalence
-psoriasis_male_pr <- read.csv("C:\\Users\\30697\\Desktop\\Διπλωματική\\Sweden\\psoriasis-male-pr.csv", stringsAsFactors = FALSE)
+psoriasis_male_pr <- read.csv(paste0(BASE, "/Sweden/psoriasis-male-pr.csv"), stringsAsFactors = FALSE)
 head(psoriasis_male_pr)
 library(dplyr)
 
@@ -8923,7 +8925,7 @@ ggplot_psoriasis_male_pr_summary2
 
 
 #second plot psoriasis male+incidence
-psoriasis_male_inc <- read.csv("C:\\Users\\30697\\Desktop\\Διπλωματική\\Sweden\\psoriasis-male-inc.csv", stringsAsFactors = FALSE)
+psoriasis_male_inc <- read.csv(paste0(BASE, "/Sweden/psoriasis-male-inc.csv"), stringsAsFactors = FALSE)
 head(psoriasis_male_inc)
 library(dplyr)
 
@@ -8997,7 +8999,7 @@ ggplot_psoriasis_male_inc_summary2
 
 
 #third plot psoriasis female+incidence
-psoriasis_female_inc <- read.csv("C:\\Users\\30697\\Desktop\\Διπλωματική\\Sweden\\psoriasis-female-inc.csv", stringsAsFactors = FALSE)
+psoriasis_female_inc <- read.csv(paste0(BASE, "/Sweden/psoriasis-female-inc.csv"), stringsAsFactors = FALSE)
 head(psoriasis_female_inc)
 library(dplyr)
 
@@ -9071,7 +9073,7 @@ ggplot_psoriasis_female_inc_summary2
 
 
 #fourth plot psoriasis female+prevalence
-psoriasis_female_pr <- read.csv("C:\\Users\\30697\\Desktop\\Διπλωματική\\Sweden\\psoriasis-female-pr.csv", stringsAsFactors = FALSE)
+psoriasis_female_pr <- read.csv(paste0(BASE, "/Sweden/psoriasis-female-pr.csv"), stringsAsFactors = FALSE)
 head(psoriasis_female_pr)
 library(dplyr)
 
@@ -9172,7 +9174,7 @@ combined_plot2 + plot_annotation(
 #asthma - United Kingdom
 
 #first plot male+prevalence
-asthma_male_pr <- read.csv("C:\\Users\\30697\\Desktop\\Διπλωματική\\United Kingdom\\asthma-male-prevalence.csv", stringsAsFactors = FALSE)
+asthma_male_pr <- read.csv(paste0(BASE, "/United Kingdom/asthma-male-prevalence.csv"), stringsAsFactors = FALSE)
 head(asthma_male_pr)
 
 library(dplyr)
@@ -9220,7 +9222,7 @@ ggplot_asthma_male_pr
 
 
 #second plot male+incidence
-asthma_male_inc <- read.csv("C:\\Users\\30697\\Desktop\\Διπλωματική\\United Kingdom\\asthma-male-incidence.csv", stringsAsFactors = FALSE)
+asthma_male_inc <- read.csv(paste0(BASE, "/United Kingdom/asthma-male-incidence.csv"), stringsAsFactors = FALSE)
 head(asthma_male_inc)
 library(dplyr)
 
@@ -9269,7 +9271,7 @@ ggplot_asthma_male_inc
 
 
 #third plot female+incidence
-asthma_female_inc <- read.csv("C:\\Users\\30697\\Desktop\\Διπλωματική\\United Kingdom\\asthma-female-incidence.csv", stringsAsFactors = FALSE)
+asthma_female_inc <- read.csv(paste0(BASE, "/United Kingdom/asthma-female-incidence.csv"), stringsAsFactors = FALSE)
 head(asthma_female_inc)
 library(dplyr)
 
@@ -9315,7 +9317,7 @@ ggplot_asthma_female_inc <- ggplot(asthma_female_inc_summary, aes(x = as.numeric
 ggplot_asthma_female_inc
 
 #fourth plot female+prevalence
-asthma_female_pr <- read.csv("C:\\Users\\30697\\Desktop\\Διπλωματική\\United Kingdom\\asthma-female-prevalence.csv", stringsAsFactors = FALSE)
+asthma_female_pr <- read.csv(paste0(BASE, "/United Kingdom/asthma-female-prevalence.csv"), stringsAsFactors = FALSE)
 head(asthma_female_pr)
 library(dplyr)
 
@@ -9378,7 +9380,7 @@ combined_plot + plot_annotation(
 #rheumatoid arthritis - United Kingdom
 
 #first rheumatoid plot female+prevalence 
-rheum.arthr_female_pr <- read.csv("C:\\Users\\30697\\Desktop\\Διπλωματική\\United Kingdom\\rheumatoid arthr-female-pr.csv", stringsAsFactors = FALSE)
+rheum.arthr_female_pr <- read.csv(paste0(BASE, "/United Kingdom/rheumatoid arthr-female-pr.csv"), stringsAsFactors = FALSE)
 head(rheum.arthr_female_pr)
 library(dplyr)
 
@@ -9426,7 +9428,7 @@ ggplot_rheum.arthr_female_pr
 
 
 #second plot rheumatoid female+incidence
-rheum.arthr_female_inc <- read.csv("C:\\Users\\30697\\Desktop\\Διπλωματική\\United Kingdom\\rheumatoid arthr-female-inc.csv", stringsAsFactors = FALSE)
+rheum.arthr_female_inc <- read.csv(paste0(BASE, "/United Kingdom/rheumatoid arthr-female-inc.csv"), stringsAsFactors = FALSE)
 head(rheum.arthr_female_inc)
 library(dplyr)
 
@@ -9473,7 +9475,7 @@ ggplot_rheum.arthr_female_inc
 
 
 #third plot rheumatoid male+incidence
-rheum.arthr_male_inc <- read.csv("C:\\Users\\30697\\Desktop\\Διπλωματική\\United Kingdom\\rheumatoid arthr-male-inc.csv", stringsAsFactors = FALSE)
+rheum.arthr_male_inc <- read.csv(paste0(BASE, "/United Kingdom/rheumatoid arthr-male-inc.csv"), stringsAsFactors = FALSE)
 head(rheum.arthr_male_inc)
 library(dplyr)
 
@@ -9520,7 +9522,7 @@ ggplot_rheum.arthr_male_inc
 
 
 #fourth plot rheumatoid male+prevalence
-rheum.arthr_male_pr <- read.csv("C:\\Users\\30697\\Desktop\\Διπλωματική\\United Kingdom\\rheumatoid arthr-male-pr.csv", stringsAsFactors = FALSE)
+rheum.arthr_male_pr <- read.csv(paste0(BASE, "/United Kingdom/rheumatoid arthr-male-pr.csv"), stringsAsFactors = FALSE)
 head(rheum.arthr_male_pr)
 library(dplyr)
 
@@ -9584,7 +9586,7 @@ combined_plot + plot_annotation(
 #atopic dermatitis - United Kingdom
 
 #first plot atopic male+prevalence
-atopic.derm_male_pr <- read.csv("C:\\Users\\30697\\Desktop\\Διπλωματική\\United Kingdom\\atopic dermatitis-male-pr.csv", stringsAsFactors = FALSE)
+atopic.derm_male_pr <- read.csv(paste0(BASE, "/United Kingdom/atopic dermatitis-male-pr.csv"), stringsAsFactors = FALSE)
 head(atopic.derm_male_pr)
 library(dplyr)
 
@@ -9632,7 +9634,7 @@ ggplot_atopic.derm_male_pr
 
 
 #second plot atopic male+incidence
-atopic.derm_male_inc <- read.csv("C:\\Users\\30697\\Desktop\\Διπλωματική\\United Kingdom\\atopic dermatitis-male-inc.csv", stringsAsFactors = FALSE)
+atopic.derm_male_inc <- read.csv(paste0(BASE, "/United Kingdom/atopic dermatitis-male-inc.csv"), stringsAsFactors = FALSE)
 head(atopic.derm_male_inc)
 library(dplyr)
 
@@ -9680,7 +9682,7 @@ ggplot_atopic.derm_male_inc
 
 
 #third plot atopic female+incidence
-atopic.derm_female_inc <- read.csv("C:\\Users\\30697\\Desktop\\Διπλωματική\\United Kingdom\\atopic dermatitis-female-inc.csv", stringsAsFactors = FALSE)
+atopic.derm_female_inc <- read.csv(paste0(BASE, "/United Kingdom/atopic dermatitis-female-inc.csv"), stringsAsFactors = FALSE)
 head(atopic.derm_female_inc)
 library(dplyr)
 
@@ -9728,7 +9730,7 @@ ggplot_atopic.derm_female_inc
 
 
 #fourth plot atopic female+prevalence
-atopic.derm_female_pr <- read.csv("C:\\Users\\30697\\Desktop\\Διπλωματική\\United Kingdom\\atopic dermatitis-female-pr.csv", stringsAsFactors = FALSE)
+atopic.derm_female_pr <- read.csv(paste0(BASE, "/United Kingdom/atopic dermatitis-female-pr.csv"), stringsAsFactors = FALSE)
 head(atopic.derm_female_pr)
 library(dplyr)
 
@@ -9791,7 +9793,7 @@ combined_plot + plot_annotation(
 #IBD - United Kingdom
 
 #first plot IBD male+prevalence
-IBD_male_pr <- read.csv("C:\\Users\\30697\\Desktop\\Διπλωματική\\United Kingdom\\IBD-male-pr.csv", stringsAsFactors = FALSE)
+IBD_male_pr <- read.csv(paste0(BASE, "/United Kingdom/IBD-male-pr.csv"), stringsAsFactors = FALSE)
 head(IBD_male_pr)
 library(dplyr)
 
@@ -9838,7 +9840,7 @@ ggplot_IBD_male_pr
 
 
 #second plot IBD male+incidence
-IBD_male_inc <- read.csv("C:\\Users\\30697\\Desktop\\Διπλωματική\\United Kingdom\\IBD-male-inc.csv", stringsAsFactors = FALSE)
+IBD_male_inc <- read.csv(paste0(BASE, "/United Kingdom/IBD-male-inc.csv"), stringsAsFactors = FALSE)
 head(IBD_male_inc)
 library(dplyr)
 
@@ -9885,7 +9887,7 @@ ggplot_IBD_male_inc
 
 
 #third plot IBD female+incidence
-IBD_female_inc <- read.csv("C:\\Users\\30697\\Desktop\\Διπλωματική\\United Kingdom\\IBD-female-inc.csv", stringsAsFactors = FALSE)
+IBD_female_inc <- read.csv(paste0(BASE, "/United Kingdom/IBD-female-inc.csv"), stringsAsFactors = FALSE)
 head(IBD_female_inc)
 library(dplyr)
 
@@ -9932,7 +9934,7 @@ ggplot_IBD_female_inc
 
 
 #fourth plot IBD female+prevalence
-IBD_female_pr <- read.csv("C:\\Users\\30697\\Desktop\\Διπλωματική\\United Kingdom\\IBD-female-pr.csv", stringsAsFactors = FALSE)
+IBD_female_pr <- read.csv(paste0(BASE, "/United Kingdom/IBD-female-pr.csv"), stringsAsFactors = FALSE)
 head(IBD_female_pr)
 library(dplyr)
 
@@ -9995,7 +9997,7 @@ combined_plot + plot_annotation(
 #Multiple sclerosis - United Kingdom
 
 #first plot sclerosis female+prevalence
-sclerosis_female_pr <- read.csv("C:\\Users\\30697\\Desktop\\Διπλωματική\\United Kingdom\\sclerosis-female-pr.csv", stringsAsFactors = FALSE)
+sclerosis_female_pr <- read.csv(paste0(BASE, "/United Kingdom/sclerosis-female-pr.csv"), stringsAsFactors = FALSE)
 head(sclerosis_female_pr)
 library(dplyr)
 
@@ -10042,7 +10044,7 @@ ggplot_sclerosis_female_pr
 
 
 #second plot sclerosis female+incidence
-sclerosis_female_inc <- read.csv("C:\\Users\\30697\\Desktop\\Διπλωματική\\United Kingdom\\sclerosis-female-inc.csv", stringsAsFactors = FALSE)
+sclerosis_female_inc <- read.csv(paste0(BASE, "/United Kingdom/sclerosis-female-inc.csv"), stringsAsFactors = FALSE)
 head(sclerosis_female_inc)
 library(dplyr)
 
@@ -10089,7 +10091,7 @@ ggplot_sclerosis_female_inc
 
 
 #third plot sclerosis male+incidence
-sclerosis_male_inc <- read.csv("C:\\Users\\30697\\Desktop\\Διπλωματική\\United Kingdom\\sclerosis-male-inc.csv", stringsAsFactors = FALSE)
+sclerosis_male_inc <- read.csv(paste0(BASE, "/United Kingdom/sclerosis-male-inc.csv"), stringsAsFactors = FALSE)
 head(sclerosis_male_inc)
 library(dplyr)
 
@@ -10137,7 +10139,7 @@ ggplot_sclerosis_male_inc
 
 
 #fourth plot sclerosis male+prevalence
-sclerosis_male_pr <- read.csv("C:\\Users\\30697\\Desktop\\Διπλωματική\\United Kingdom\\sclerosis-male-pr.csv", stringsAsFactors = FALSE)
+sclerosis_male_pr <- read.csv(paste0(BASE, "/United Kingdom/sclerosis-male-pr.csv"), stringsAsFactors = FALSE)
 head(sclerosis_male_pr)
 library(dplyr)
 
@@ -10200,7 +10202,7 @@ combined_plot + plot_annotation(
 #psoriasis - United Kingdom
 
 #first plot psoriasis male+prevalence
-psoriasis_male_pr <- read.csv("C:\\Users\\30697\\Desktop\\Διπλωματική\\United Kingdom\\psoriasis-male-pr.csv", stringsAsFactors = FALSE)
+psoriasis_male_pr <- read.csv(paste0(BASE, "/United Kingdom/psoriasis-male-pr.csv"), stringsAsFactors = FALSE)
 head(psoriasis_male_pr)
 library(dplyr)
 
@@ -10247,7 +10249,7 @@ ggplot_psoriasis_male_pr
 
 
 #second plot psoriasis male+incidence
-psoriasis_male_inc <- read.csv("C:\\Users\\30697\\Desktop\\Διπλωματική\\United Kingdom\\psoriasis-male-inc.csv", stringsAsFactors = FALSE)
+psoriasis_male_inc <- read.csv(paste0(BASE, "/United Kingdom/psoriasis-male-inc.csv"), stringsAsFactors = FALSE)
 head(psoriasis_male_inc)
 library(dplyr)
 
@@ -10294,7 +10296,7 @@ ggplot_psoriasis_male_inc
 
 
 #third plot psoriasis female+incidence
-psoriasis_female_inc <- read.csv("C:\\Users\\30697\\Desktop\\Διπλωματική\\United Kingdom\\psoriasis-female-inc.csv", stringsAsFactors = FALSE)
+psoriasis_female_inc <- read.csv(paste0(BASE, "/United Kingdom/psoriasis-female-inc.csv"), stringsAsFactors = FALSE)
 head(psoriasis_female_inc)
 library(dplyr)
 
@@ -10341,7 +10343,7 @@ ggplot_psoriasis_female_inc
 
 
 #fourth plot psoriasis female+prevalence
-psoriasis_female_pr <- read.csv("C:\\Users\\30697\\Desktop\\Διπλωματική\\United Kingdom\\psoriasis-female-pr.csv", stringsAsFactors = FALSE)
+psoriasis_female_pr <- read.csv(paste0(BASE, "/United Kingdom/psoriasis-female-pr.csv"), stringsAsFactors = FALSE)
 head(psoriasis_female_pr)
 library(dplyr)
 
