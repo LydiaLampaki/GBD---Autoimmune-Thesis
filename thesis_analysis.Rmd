@@ -1337,7 +1337,7 @@ ggplot_asthma_m_pr_summary2<- ggplot(asthma_male_pr_summary2, aes(x = as.numeric
   labs(
     x = "Year",
     y = "Rate",
-    title = "Asthma - Male - Prevalence (All Ages)"
+    title = "Asthma - Male - Prevalence"
   ) +
   theme_minimal(base_size = 14) +
   theme(
@@ -1418,7 +1418,7 @@ ggplot_asthma_male_inc_summary2 <- ggplot(asthma_male_inc_summary2, aes(x = as.n
   labs(
     x = "Year",
     y = "Rate",
-    title = "Asthma - Male - Incidence (All Ages)"
+    title = "Asthma - Male - Incidence"
   ) +
   theme_minimal(base_size = 14) +
   theme(
@@ -1495,7 +1495,7 @@ ggplot_asthma_female_inc_summary2 <- ggplot(asthma_female_inc_summary2, aes(x = 
   labs(
     x = "Year",
     y = "Rate",
-    title = "Asthma - Female - Incidence (All Ages)"
+    title = "Asthma - Female - Incidence"
   ) +
   theme_minimal(base_size = 14) +
   theme(
@@ -1574,7 +1574,7 @@ ggplot_asthma_female_pr_summary2 <- ggplot(asthma_female_pr_summary2, aes(x = as
   labs(
     x = "Year",
     y = "Rate",
-    title = "Asthma - Female - Prevalence (All Ages)"
+    title = "Asthma - Female - Prevalence"
   ) +
   theme_minimal(base_size = 14) +
   theme(
@@ -1679,7 +1679,7 @@ ggplot_rheum.arthr_female_pr_summary2 <- ggplot(rheum.arthr_female_pr_summary2, 
   labs(
     x = "Year",
     y = "Rate",
-    title = "rheum.arthr_female_prevalence (All Ages)"
+    title = "rheum.arthr_female_prevalence"
   ) +
   theme_minimal(base_size = 14) +
   theme(
@@ -1756,7 +1756,7 @@ ggplot_rheum.arthr_female_inc_summary2 <- ggplot(rheum.arthr_female_inc_summary2
   labs(
     x = "Year",
     y = "Rate",
-    title = "rheum.arthr_female_incidence (All Ages)"
+    title = "rheum.arthr_female_incidence"
   ) +
   theme_minimal(base_size = 14) +
   theme(
@@ -1832,7 +1832,7 @@ ggplot_rheum.arthr_male_inc_summary2 <- ggplot(rheum.arthr_male_inc_summary2, ae
   labs(
     x = "Year",
     y = "Rate",
-    title = "rheum.arthr_male_incidence (All Ages)"
+    title = "rheum.arthr_male_incidence"
   ) +
   theme_minimal(base_size = 14) +
   theme(
@@ -1908,7 +1908,7 @@ ggplot_rheum.arthr_male_pr_summary2 <- ggplot(rheum.arthr_male_pr_summary2, aes(
   labs(
     x = "Year",
     y = "Rate",
-    title = "rheum.arthr_male_prevalence (All Ages)"
+    title = "rheum.arthr_male_prevalence"
   ) +
   theme_minimal(base_size = 14) +
   theme(
@@ -2014,7 +2014,7 @@ ggplot_atopic.derm_male_pr_summary2 <- ggplot(atopic.derm_male_pr_summary2, aes(
   labs(
     x = "Year",
     y = "Rate",
-    title = "atopic.derm_male_prevalence (All Ages)"
+    title = "atopic.derm_male_prevalence"
   ) +
   theme_minimal(base_size = 14) +
   theme(
@@ -2091,7 +2091,7 @@ ggplot_atopic.derm_male_inc_summary2 <- ggplot(atopic.derm_male_inc_summary2, ae
   labs(
     x = "Year",
     y = "Rate",
-    title = "atopic.derm_male_incidence (All Ages)"
+    title = "atopic.derm_male_incidence"
   ) +
   theme_minimal(base_size = 14) +
   theme(
@@ -2168,7 +2168,7 @@ ggplot_atopic.derm_female_inc_summary2 <- ggplot(atopic.derm_female_inc_summary2
   labs(
     x = "Year",
     y = "Rate",
-    title = "atopic.derm_female_incidence (All Ages)"
+    title = "atopic.derm_female_incidence"
   ) +
   theme_minimal(base_size = 14) +
   theme(
@@ -2243,7 +2243,7 @@ ggplot_atopic.derm_female_pr_summary2 <- ggplot(atopic.derm_female_pr_summary2, 
   labs(
     x = "Year",
     y = "Rate",
-    title = "atopic.derm_female_prevalence (All Ages)"
+    title = "atopic.derm_female_prevalence"
   ) +
   theme_minimal(base_size = 14) +
   theme(
@@ -2348,7 +2348,7 @@ ggplot_IBD_male_pr_summary2 <- ggplot(IBD_male_pr_summary2, aes(x = as.numeric(y
   labs(
     x = "Year",
     y = "Rate",
-    title = "IBD_male_prevalence (All Ages)"
+    title = "IBD_male_prevalence"
   ) +
   theme_minimal(base_size = 14) +
   theme(
@@ -2425,7 +2425,7 @@ ggplot_IBD_male_inc_summary2 <- ggplot(IBD_male_inc_summary2, aes(x = as.numeric
   labs(
     x = "Year",
     y = "Rate",
-    title = "IBD_male_incidence (All Ages)"
+    title = "IBD_male_incidence"
   ) +
   theme_minimal(base_size = 14) +
   theme(
@@ -2501,7 +2501,7 @@ ggplot_IBD_female_inc_summary2 <- ggplot(IBD_female_inc_summary2, aes(x = as.num
   labs(
     x = "Year",
     y = "Rate",
-    title = "IBD_female_incidence (All Ages)"
+    title = "IBD_female_incidence"
   ) +
   theme_minimal(base_size = 14) +
   theme(
@@ -2579,7 +2579,7 @@ ggplot_IBD_female_pr_summary2 <- ggplot(IBD_female_pr_summary2, aes(x = as.numer
   labs(
     x = "Year",
     y = "Rate",
-    title = "IBD_female_prevalence (All Ages)"
+    title = "IBD_female_prevalence"
   ) +
   theme_minimal(base_size = 14) +
   theme(
@@ -2686,7 +2686,7 @@ ggplot_sclerosis_female_pr_summary2 <- ggplot(sclerosis_female_pr_summary2, aes(
   labs(
     x = "Year",
     y = "Rate",
-    title = "sclerosis_female_prevalence (All Ages)"
+    title = "sclerosis_female_prevalence"
   ) +
   theme_minimal(base_size = 14) +
   theme(
@@ -2763,7 +2763,7 @@ ggplot_sclerosis_female_inc_summary2 <- ggplot(sclerosis_female_inc_summary2, ae
   labs(
     x = "Year",
     y = "Rate",
-    title = "sclerosis_female_incidence (All Ages)"
+    title = "sclerosis_female_incidence "
   ) +
   theme_minimal(base_size = 14) +
   theme(
@@ -2840,7 +2840,7 @@ ggplot_sclerosis_male_inc_summary2 <- ggplot(sclerosis_male_inc_summary2, aes(x 
   labs(
     x = "Year",
     y = "Rate",
-    title = "sclerosis_male_incidence (All Ages)"
+    title = "sclerosis_male_incidence "
   ) +
   theme_minimal(base_size = 14) +
   theme(
@@ -2916,7 +2916,7 @@ ggplot_sclerosis_male_pr_summary2 <- ggplot(sclerosis_male_pr_summary2, aes(x = 
   labs(
     x = "Year",
     y = "Rate",
-    title = "sclerosis_male_prevalence (All Ages)"
+    title = "sclerosis_male_prevalence "
   ) +
   theme_minimal(base_size = 14) +
   theme(
@@ -3023,7 +3023,7 @@ ggplot_psoriasis_male_pr_summary2 <- ggplot(psoriasis_male_pr_summary2, aes(x = 
   labs(
     x = "Year",
     y = "Rate",
-    title = "psoriasis_male_prevalence (All Ages)"
+    title = "psoriasis_male_prevalence "
   ) +
   theme_minimal(base_size = 14) +
   theme(
@@ -3098,7 +3098,7 @@ ggplot_psoriasis_male_inc_summary2 <- ggplot(psoriasis_male_inc_summary2, aes(x 
   labs(
     x = "Year",
     y = "Rate",
-    title = "psoriasis_male_incidence (All Ages)"
+    title = "psoriasis_male_incidence "
   ) +
   theme_minimal(base_size = 14) +
   theme(
@@ -3176,7 +3176,7 @@ ggplot_psoriasis_female_inc_summary2 <- ggplot(psoriasis_female_inc_summary2, ae
   labs(
     x = "Year",
     y = "Rate",
-    title = "psoriasis_female_incidence (All Ages)"
+    title = "psoriasis_female_incidence "
   ) +
   theme_minimal(base_size = 14) +
   theme(
@@ -3253,7 +3253,7 @@ ggplot_psoriasis_female_pr_summary2 <- ggplot(psoriasis_female_pr_summary2, aes(
   labs(
     x = "Year",
     y = "Rate",
-    title = "psoriasis_female_prevalence (All Ages)"
+    title = "psoriasis_female_prevalence "
   ) +
   theme_minimal(base_size = 14) +
   theme(
@@ -3357,7 +3357,7 @@ ggplot_asthma_m_pr_summary2<- ggplot(asthma_male_pr_summary2, aes(x = as.numeric
   labs(
     x = "Year",
     y = "Rate",
-    title = "Asthma - Male - Prevalence (All Ages)"
+    title = "Asthma - Male - Prevalence "
   ) +
   theme_minimal(base_size = 14) +
   theme(
@@ -3434,7 +3434,7 @@ ggplot_asthma_male_inc_summary2 <- ggplot(asthma_male_inc_summary2, aes(x = as.n
   labs(
     x = "Year",
     y = "Rate",
-    title = "Asthma - male - Incidence (All Ages)"
+    title = "Asthma - male - Incidence "
   ) +
   theme_minimal(base_size = 14) +
   theme(
@@ -3511,7 +3511,7 @@ ggplot_asthma_female_inc_summary2 <- ggplot(asthma_female_inc_summary2, aes(x = 
   labs(
     x = "Year",
     y = "Rate",
-    title = "Asthma - Female - Incidence (All Ages)"
+    title = "Asthma - Female - Incidence "
   ) +
   theme_minimal(base_size = 14) +
   theme(
@@ -3587,7 +3587,7 @@ ggplot_asthma_female_pr_summary2 <- ggplot(asthma_female_pr_summary2, aes(x = as
   labs(
     x = "Year",
     y = "Rate",
-    title = "Asthma - Female - Prevalence (All Ages)"
+    title = "Asthma - Female - Prevalence "
   ) +
   theme_minimal(base_size = 14) +
   theme(
@@ -3689,7 +3689,7 @@ ggplot_rheum.arthr_female_pr_summary2 <- ggplot(rheum.arthr_female_pr_summary2, 
   labs(
     x = "Year",
     y = "Rate",
-    title = "rheum.arthr_female_prevalence (All Ages)"
+    title = "rheum.arthr_female_prevalence "
   ) +
   theme_minimal(base_size = 14) +
   theme(
@@ -3764,7 +3764,7 @@ ggplot_rheum.arthr_female_inc_summary2 <- ggplot(rheum.arthr_female_inc_summary2
   labs(
     x = "Year",
     y = "Rate",
-    title = "rheum.arthr_female_incidence (All Ages)"
+    title = "rheum.arthr_female_incidence "
   ) +
   theme_minimal(base_size = 14) +
   theme(
@@ -3839,7 +3839,7 @@ ggplot_rheum.arthr_male_inc_summary2 <- ggplot(rheum.arthr_male_inc_summary2, ae
   labs(
     x = "Year",
     y = "Rate",
-    title = "rheum.arthr_male_incidence (All Ages)"
+    title = "rheum.arthr_male_incidence "
   ) +
   theme_minimal(base_size = 14) +
   theme(
@@ -3915,7 +3915,7 @@ ggplot_rheum.arthr_male_pr_summary2 <- ggplot(rheum.arthr_male_pr_summary2, aes(
   labs(
     x = "Year",
     y = "Rate",
-    title = "rheum.arthr_male_prevalence (All Ages)"
+    title = "rheum.arthr_male_prevalence "
   ) +
   theme_minimal(base_size = 14) +
   theme(
@@ -4017,7 +4017,7 @@ ggplot_atopic.derm_male_pr_summary2 <- ggplot(atopic.derm_male_pr_summary2, aes(
   labs(
     x = "Year",
     y = "Rate",
-    title = "atopic.derm_male_prevalence (All Ages)"
+    title = "atopic.derm_male_prevalence "
   ) +
   theme_minimal(base_size = 14) +
   theme(
@@ -4093,7 +4093,7 @@ ggplot_atopic.derm_male_inc_summary2 <- ggplot(atopic.derm_male_inc_summary2, ae
   labs(
     x = "Year",
     y = "Rate",
-    title = "atopic.derm_male_incidence (All Ages)"
+    title = "atopic.derm_male_incidence "
   ) +
   theme_minimal(base_size = 14) +
   theme(
@@ -4169,7 +4169,7 @@ ggplot_atopic.derm_female_inc_summary2 <- ggplot(atopic.derm_female_inc_summary2
   labs(
     x = "Year",
     y = "Rate",
-    title = "atopic.derm_female_incidence (All Ages)"
+    title = "atopic.derm_female_incidence "
   ) +
   theme_minimal(base_size = 14) +
   theme(
@@ -4244,7 +4244,7 @@ ggplot_atopic.derm_female_pr_summary2 <- ggplot(atopic.derm_female_pr_summary2, 
   labs(
     x = "Year",
     y = "Rate",
-    title = "atopic.derm_female_prevalence (All Ages)"
+    title = "atopic.derm_female_prevalence "
   ) +
   theme_minimal(base_size = 14) +
   theme(
@@ -4348,7 +4348,7 @@ ggplot_IBD_male_pr_summary2 <- ggplot(IBD_male_pr_summary2, aes(x = as.numeric(y
   labs(
     x = "Year",
     y = "Rate",
-    title = "IBD_male_prevalence (All Ages)"
+    title = "IBD_male_prevalence "
   ) +
   theme_minimal(base_size = 14) +
   theme(
@@ -4423,7 +4423,7 @@ ggplot_IBD_male_inc_summary2 <- ggplot(IBD_male_inc_summary2, aes(x = as.numeric
   labs(
     x = "Year",
     y = "Rate",
-    title = "IBD_male_incidence (All Ages)"
+    title = "IBD_male_incidence "
   ) +
   theme_minimal(base_size = 14) +
   theme(
@@ -4500,7 +4500,7 @@ ggplot_IBD_female_inc_summary2 <- ggplot(IBD_female_inc_summary2, aes(x = as.num
   labs(
     x = "Year",
     y = "Rate",
-    title = "IBD_female_incidence (All Ages)"
+    title = "IBD_female_incidence "
   ) +
   theme_minimal(base_size = 14) +
   theme(
@@ -4576,7 +4576,7 @@ ggplot_IBD_female_pr_summary2 <- ggplot(IBD_female_pr_summary2, aes(x = as.numer
   labs(
     x = "Year",
     y = "Rate",
-    title = "IBD_female_prevalence (All Ages)"
+    title = "IBD_female_prevalence "
   ) +
   theme_minimal(base_size = 14) +
   theme(
@@ -4678,7 +4678,7 @@ ggplot_sclerosis_female_pr_summary2 <- ggplot(sclerosis_female_pr_summary2, aes(
   labs(
     x = "Year",
     y = "Rate",
-    title = "sclerosis_female_prevalence (All Ages)"
+    title = "sclerosis_female_prevalence "
   ) +
   theme_minimal(base_size = 14) +
   theme(
@@ -4752,7 +4752,7 @@ ggplot_sclerosis_female_inc_summary2 <- ggplot(sclerosis_female_inc_summary2, ae
   labs(
     x = "Year",
     y = "Rate",
-    title = "sclerosis_female_incidence (All Ages)"
+    title = "sclerosis_female_incidence "
   ) +
   theme_minimal(base_size = 14) +
   theme(
@@ -4826,7 +4826,7 @@ ggplot_sclerosis_male_inc_summary2 <- ggplot(sclerosis_male_inc_summary2, aes(x 
   labs(
     x = "Year",
     y = "Rate",
-    title = "sclerosis_male_incidence (All Ages)"
+    title = "sclerosis_male_incidence "
   ) +
   theme_minimal(base_size = 14) +
   theme(
@@ -4899,7 +4899,7 @@ ggplot_sclerosis_male_pr_summary2 <- ggplot(sclerosis_male_pr_summary2, aes(x = 
   labs(
     x = "Year",
     y = "Rate",
-    title = "sclerosis_male_prevalence (All Ages)"
+    title = "sclerosis_male_prevalence "
   ) +
   theme_minimal(base_size = 14) +
   theme(
@@ -5000,7 +5000,7 @@ ggplot_psoriasis_male_pr_summary2 <- ggplot(psoriasis_male_pr_summary2, aes(x = 
   labs(
     x = "Year",
     y = "Rate",
-    title = "psoriasis_male_prevalence (All Ages)"
+    title = "psoriasis_male_prevalence "
   ) +
   theme_minimal(base_size = 14) +
   theme(
@@ -5073,7 +5073,7 @@ ggplot_psoriasis_male_inc_summary2 <- ggplot(psoriasis_male_inc_summary2, aes(x 
   labs(
     x = "Year",
     y = "Rate",
-    title = "psoriasis_male_incidence (All Ages)"
+    title = "psoriasis_male_incidence "
   ) +
   theme_minimal(base_size = 14) +
   theme(
@@ -5148,7 +5148,7 @@ ggplot_psoriasis_female_inc_summary2 <- ggplot(psoriasis_female_inc_summary2, ae
   labs(
     x = "Year",
     y = "Rate",
-    title = "psoriasis_female_incidence (All Ages)"
+    title = "psoriasis_female_incidence "
   ) +
   theme_minimal(base_size = 14) +
   theme(
@@ -5222,7 +5222,7 @@ ggplot_psoriasis_female_pr_summary2 <- ggplot(psoriasis_female_pr_summary2, aes(
   labs(
     x = "Year",
     y = "Rate",
-    title = "psoriasis_female_prevalence (All Ages)"
+    title = "psoriasis_female_prevalence "
   ) +
   theme_minimal(base_size = 14) +
   theme(
@@ -5324,7 +5324,7 @@ ggplot_asthma_m_pr_summary2<- ggplot(asthma_male_pr_summary2, aes(x = as.numeric
   labs(
     x = "Year",
     y = "Rate",
-    title = "Asthma - Male - Prevalence (All Ages)"
+    title = "Asthma - Male - Prevalence "
   ) +
   theme_minimal(base_size = 14) +
   theme(
@@ -5400,7 +5400,7 @@ ggplot_asthma_male_inc_summary2 <- ggplot(asthma_male_inc_summary2, aes(x = as.n
   labs(
     x = "Year",
     y = "Rate",
-    title = "Asthma - male - Incidence (All Ages)"
+    title = "Asthma - male - Incidence "
   ) +
   theme_minimal(base_size = 14) +
   theme(
@@ -5474,7 +5474,7 @@ ggplot_asthma_female_inc_summary2 <- ggplot(asthma_female_inc_summary2, aes(x = 
   labs(
     x = "Year",
     y = "Rate",
-    title = "Asthma - Female - Incidence (All Ages)"
+    title = "Asthma - Female - Incidence "
   ) +
   theme_minimal(base_size = 14) +
   theme(
@@ -5548,7 +5548,7 @@ ggplot_asthma_female_pr_summary2 <- ggplot(asthma_female_pr_summary2, aes(x = as
   labs(
     x = "Year",
     y = "Rate",
-    title = "Asthma - Female - Prevalence (All Ages)"
+    title = "Asthma - Female - Prevalence "
   ) +
   theme_minimal(base_size = 14) +
   theme(
@@ -5650,7 +5650,7 @@ ggplot_rheum.arthr_female_pr_summary2 <- ggplot(rheum.arthr_female_pr_summary2, 
   labs(
     x = "Year",
     y = "Rate",
-    title = "rheum.arthr_female_prevalence (All Ages)"
+    title = "rheum.arthr_female_prevalence "
   ) +
   theme_minimal(base_size = 14) +
   theme(
@@ -5725,7 +5725,7 @@ ggplot_rheum.arthr_female_inc_summary2 <- ggplot(rheum.arthr_female_inc_summary2
   labs(
     x = "Year",
     y = "Rate",
-    title = "rheum.arthr_female_incidence (All Ages)"
+    title = "rheum.arthr_female_incidence "
   ) +
   theme_minimal(base_size = 14) +
   theme(
@@ -5799,7 +5799,7 @@ ggplot_rheum.arthr_male_inc_summary2 <- ggplot(rheum.arthr_male_inc_summary2, ae
   labs(
     x = "Year",
     y = "Rate",
-    title = "rheum.arthr_male_incidence (All Ages)"
+    title = "rheum.arthr_male_incidence "
   ) +
   theme_minimal(base_size = 14) +
   theme(
@@ -5873,7 +5873,7 @@ ggplot_rheum.arthr_male_pr_summary2 <- ggplot(rheum.arthr_male_pr_summary2, aes(
   labs(
     x = "Year",
     y = "Rate",
-    title = "rheum.arthr_male_prevalence (All Ages)"
+    title = "rheum.arthr_male_prevalence "
   ) +
   theme_minimal(base_size = 14) +
   theme(
@@ -5975,7 +5975,7 @@ ggplot_atopic.derm_male_pr_summary2 <- ggplot(atopic.derm_male_pr_summary2, aes(
   labs(
     x = "Year",
     y = "Rate",
-    title = "atopic.derm_male_prevalence (All Ages)"
+    title = "atopic.derm_male_prevalence "
   ) +
   theme_minimal(base_size = 14) +
   theme(
@@ -6049,7 +6049,7 @@ ggplot_atopic.derm_male_inc_summary2 <- ggplot(atopic.derm_male_inc_summary2, ae
   labs(
     x = "Year",
     y = "Rate",
-    title = "atopic.derm_male_incidence (All Ages)"
+    title = "atopic.derm_male_incidence "
   ) +
   theme_minimal(base_size = 14) +
   theme(
@@ -6123,7 +6123,7 @@ ggplot_atopic.derm_female_inc_summary2 <- ggplot(atopic.derm_female_inc_summary2
   labs(
     x = "Year",
     y = "Rate",
-    title = "atopic.derm_female_incidence (All Ages)"
+    title = "atopic.derm_female_incidence "
   ) +
   theme_minimal(base_size = 14) +
   theme(
@@ -6196,7 +6196,7 @@ ggplot_atopic.derm_female_pr_summary2 <- ggplot(atopic.derm_female_pr_summary2, 
   labs(
     x = "Year",
     y = "Rate",
-    title = "atopic.derm_female_prevalence (All Ages)"
+    title = "atopic.derm_female_prevalence "
   ) +
   theme_minimal(base_size = 14) +
   theme(
@@ -6299,7 +6299,7 @@ ggplot_IBD_male_pr_summary2 <- ggplot(IBD_male_pr_summary2, aes(x = as.numeric(y
   labs(
     x = "Year",
     y = "Rate",
-    title = "IBD_male_prevalence (All Ages)"
+    title = "IBD_male_prevalence "
   ) +
   theme_minimal(base_size = 14) +
   theme(
@@ -6373,7 +6373,7 @@ ggplot_IBD_male_inc_summary2 <- ggplot(IBD_male_inc_summary2, aes(x = as.numeric
   labs(
     x = "Year",
     y = "Rate",
-    title = "IBD_male_incidence (All Ages)"
+    title = "IBD_male_incidence "
   ) +
   theme_minimal(base_size = 14) +
   theme(
@@ -6449,7 +6449,7 @@ ggplot_IBD_female_inc_summary2 <- ggplot(IBD_female_inc_summary2, aes(x = as.num
   labs(
     x = "Year",
     y = "Rate",
-    title = "IBD_female_incidence (All Ages)"
+    title = "IBD_female_incidence "
   ) +
   theme_minimal(base_size = 14) +
   theme(
@@ -6524,7 +6524,7 @@ ggplot_IBD_female_pr_summary2 <- ggplot(IBD_female_pr_summary2, aes(x = as.numer
   labs(
     x = "Year",
     y = "Rate",
-    title = "IBD_female_prevalence (All Ages)"
+    title = "IBD_female_prevalence "
   ) +
   theme_minimal(base_size = 14) +
   theme(
@@ -6626,7 +6626,7 @@ ggplot_sclerosis_female_pr_summary2 <- ggplot(sclerosis_female_pr_summary2, aes(
   labs(
     x = "Year",
     y = "Rate",
-    title = "sclerosis_female_prevalence (All Ages)"
+    title = "sclerosis_female_prevalence "
   ) +
   theme_minimal(base_size = 14) +
   theme(
@@ -6701,7 +6701,7 @@ ggplot_sclerosis_female_inc_summary2 <- ggplot(sclerosis_female_inc_summary2, ae
   labs(
     x = "Year",
     y = "Rate",
-    title = "sclerosis_female_incidence (All Ages)"
+    title = "sclerosis_female_incidence "
   ) +
   theme_minimal(base_size = 14) +
   theme(
@@ -6776,7 +6776,7 @@ ggplot_sclerosis_male_inc_summary2 <- ggplot(sclerosis_male_inc_summary2, aes(x 
   labs(
     x = "Year",
     y = "Rate",
-    title = "sclerosis_male_incidence (All Ages)"
+    title = "sclerosis_male_incidence "
   ) +
   theme_minimal(base_size = 14) +
   theme(
@@ -6850,7 +6850,7 @@ ggplot_sclerosis_male_pr_summary2 <- ggplot(sclerosis_male_pr_summary2, aes(x = 
   labs(
     x = "Year",
     y = "Rate",
-    title = "sclerosis_male_prevalence (All Ages)"
+    title = "sclerosis_male_prevalence "
   ) +
   theme_minimal(base_size = 14) +
   theme(
@@ -6953,7 +6953,7 @@ ggplot_psoriasis_male_pr_summary2 <- ggplot(psoriasis_male_pr_summary2, aes(x = 
   labs(
     x = "Year",
     y = "Rate",
-    title = "psoriasis_male_prevalence (All Ages)"
+    title = "psoriasis_male_prevalence "
   ) +
   theme_minimal(base_size = 14) +
   theme(
@@ -7028,7 +7028,7 @@ ggplot_psoriasis_male_inc_summary2 <- ggplot(psoriasis_male_inc_summary2, aes(x 
   labs(
     x = "Year",
     y = "Rate",
-    title = "psoriasis_male_incidence (All Ages)"
+    title = "psoriasis_male_incidence "
   ) +
   theme_minimal(base_size = 14) +
   theme(
@@ -7105,7 +7105,7 @@ ggplot_psoriasis_female_inc_summary2 <- ggplot(psoriasis_female_inc_summary2, ae
   labs(
     x = "Year",
     y = "Rate",
-    title = "psoriasis_female_incidence (All Ages)"
+    title = "psoriasis_female_incidence "
   ) +
   theme_minimal(base_size = 14) +
   theme(
@@ -7179,7 +7179,7 @@ ggplot_psoriasis_female_pr_summary2 <- ggplot(psoriasis_female_pr_summary2, aes(
   labs(
     x = "Year",
     y = "Rate",
-    title = "psoriasis_female_prevalence (All Ages)"
+    title = "psoriasis_female_prevalence "
   ) +
   theme_minimal(base_size = 14) +
   theme(
@@ -7281,7 +7281,7 @@ ggplot_asthma_m_pr_summary2<- ggplot(asthma_male_pr_summary2, aes(x = as.numeric
   labs(
     x = "Year",
     y = "Rate",
-    title = "Asthma - Male - Prevalence (All Ages)"
+    title = "Asthma - Male - Prevalence "
   ) +
   theme_minimal(base_size = 14) +
   theme(
@@ -7357,7 +7357,7 @@ ggplot_asthma_male_inc_summary2 <- ggplot(asthma_male_inc_summary2, aes(x = as.n
   labs(
     x = "Year",
     y = "Rate",
-    title = "Asthma - male - Incidence (All Ages)"
+    title = "Asthma - male - Incidence "
   ) +
   theme_minimal(base_size = 14) +
   theme(
@@ -7431,7 +7431,7 @@ ggplot_asthma_female_inc_summary2 <- ggplot(asthma_female_inc_summary2, aes(x = 
   labs(
     x = "Year",
     y = "Rate",
-    title = "Asthma - Female - Incidence (All Ages)"
+    title = "Asthma - Female - Incidence "
   ) +
   theme_minimal(base_size = 14) +
   theme(
@@ -7505,7 +7505,7 @@ ggplot_asthma_female_pr_summary2 <- ggplot(asthma_female_pr_summary2, aes(x = as
   labs(
     x = "Year",
     y = "Rate",
-    title = "Asthma - Female - Prevalence (All Ages)"
+    title = "Asthma - Female - Prevalence "
   ) +
   theme_minimal(base_size = 14) +
   theme(
@@ -7607,7 +7607,7 @@ ggplot_rheum.arthr_female_pr_summary2 <- ggplot(rheum.arthr_female_pr_summary2, 
   labs(
     x = "Year",
     y = "Rate",
-    title = "rheum.arthr_female_prevalence (All Ages)"
+    title = "rheum.arthr_female_prevalence "
   ) +
   theme_minimal(base_size = 14) +
   theme(
@@ -7681,7 +7681,7 @@ ggplot_rheum.arthr_female_inc_summary2 <- ggplot(rheum.arthr_female_inc_summary2
   labs(
     x = "Year",
     y = "Rate",
-    title = "rheum.arthr_female_incidence (All Ages)"
+    title = "rheum.arthr_female_incidence "
   ) +
   theme_minimal(base_size = 14) +
   theme(
@@ -7755,7 +7755,7 @@ ggplot_rheum.arthr_male_inc_summary2 <- ggplot(rheum.arthr_male_inc_summary2, ae
   labs(
     x = "Year",
     y = "Rate",
-    title = "rheum.arthr_male_incidence (All Ages)"
+    title = "rheum.arthr_male_incidence "
   ) +
   theme_minimal(base_size = 14) +
   theme(
@@ -7829,7 +7829,7 @@ ggplot_rheum.arthr_male_pr_summary2 <- ggplot(rheum.arthr_male_pr_summary2, aes(
   labs(
     x = "Year",
     y = "Rate",
-    title = "rheum.arthr_male_prevalence (All Ages)"
+    title = "rheum.arthr_male_prevalence "
   ) +
   theme_minimal(base_size = 14) +
   theme(
@@ -7930,7 +7930,7 @@ ggplot_atopic.derm_male_pr_summary2 <- ggplot(atopic.derm_male_pr_summary2, aes(
   labs(
     x = "Year",
     y = "Rate",
-    title = "atopic.derm_male_prevalence (All Ages)"
+    title = "atopic.derm_male_prevalence "
   ) +
   theme_minimal(base_size = 14) +
   theme(
@@ -8004,7 +8004,7 @@ ggplot_atopic.derm_male_inc_summary2 <- ggplot(atopic.derm_male_inc_summary2, ae
   labs(
     x = "Year",
     y = "Rate",
-    title = "atopic.derm_male_incidence (All Ages)"
+    title = "atopic.derm_male_incidence "
   ) +
   theme_minimal(base_size = 14) +
   theme(
@@ -8079,7 +8079,7 @@ ggplot_atopic.derm_female_inc_summary2 <- ggplot(atopic.derm_female_inc_summary2
   labs(
     x = "Year",
     y = "Rate",
-    title = "atopic.derm_female_incidence (All Ages)"
+    title = "atopic.derm_female_incidence "
   ) +
   theme_minimal(base_size = 14) +
   theme(
@@ -8155,7 +8155,7 @@ ggplot_atopic.derm_female_pr_summary2 <- ggplot(atopic.derm_female_pr_summary2, 
   labs(
     x = "Year",
     y = "Rate",
-    title = "atopic.derm_female_prevalence (All Ages)"
+    title = "atopic.derm_female_prevalence "
   ) +
   theme_minimal(base_size = 14) +
   theme(
@@ -8257,7 +8257,7 @@ ggplot_IBD_male_pr_summary2 <- ggplot(IBD_male_pr_summary2, aes(x = as.numeric(y
   labs(
     x = "Year",
     y = "Rate",
-    title = "IBD_male_prevalence (All Ages)"
+    title = "IBD_male_prevalence "
   ) +
   theme_minimal(base_size = 14) +
   theme(
@@ -8332,7 +8332,7 @@ ggplot_IBD_male_inc_summary2 <- ggplot(IBD_male_inc_summary2, aes(x = as.numeric
   labs(
     x = "Year",
     y = "Rate",
-    title = "IBD_male_incidence (All Ages)"
+    title = "IBD_male_incidence "
   ) +
   theme_minimal(base_size = 14) +
   theme(
@@ -8407,7 +8407,7 @@ ggplot_IBD_female_inc_summary2 <- ggplot(IBD_female_inc_summary2, aes(x = as.num
   labs(
     x = "Year",
     y = "Rate",
-    title = "IBD_female_incidence (All Ages)"
+    title = "IBD_female_incidence "
   ) +
   theme_minimal(base_size = 14) +
   theme(
@@ -8480,7 +8480,7 @@ ggplot_IBD_female_pr_summary2 <- ggplot(IBD_female_pr_summary2, aes(x = as.numer
   labs(
     x = "Year",
     y = "Rate",
-    title = "IBD_female_prevalence (All Ages)"
+    title = "IBD_female_prevalence "
   ) +
   theme_minimal(base_size = 14) +
   theme(
@@ -8583,7 +8583,7 @@ ggplot_sclerosis_female_pr_summary2 <- ggplot(sclerosis_female_pr_summary2, aes(
   labs(
     x = "Year",
     y = "Rate",
-    title = "sclerosis_female_prevalence (All Ages)"
+    title = "sclerosis_female_prevalence "
   ) +
   theme_minimal(base_size = 14) +
   theme(
@@ -8657,7 +8657,7 @@ ggplot_sclerosis_female_inc_summary2 <- ggplot(sclerosis_female_inc_summary2, ae
   labs(
     x = "Year",
     y = "Rate",
-    title = "sclerosis_female_incidence (All Ages)"
+    title = "sclerosis_female_incidence "
   ) +
   theme_minimal(base_size = 14) +
   theme(
@@ -8731,7 +8731,7 @@ ggplot_sclerosis_male_inc_summary2 <- ggplot(sclerosis_male_inc_summary2, aes(x 
   labs(
     x = "Year",
     y = "Rate",
-    title = "sclerosis_male_incidence (All Ages)"
+    title = "sclerosis_male_incidence "
   ) +
   theme_minimal(base_size = 14) +
   theme(
@@ -8806,7 +8806,7 @@ ggplot_sclerosis_male_pr_summary2 <- ggplot(sclerosis_male_pr_summary2, aes(x = 
   labs(
     x = "Year",
     y = "Rate",
-    title = "sclerosis_male_prevalence (All Ages)"
+    title = "sclerosis_male_prevalence "
   ) +
   theme_minimal(base_size = 14) +
   theme(
@@ -8907,7 +8907,7 @@ ggplot_psoriasis_male_pr_summary2 <- ggplot(psoriasis_male_pr_summary2, aes(x = 
   labs(
     x = "Year",
     y = "Rate",
-    title = "psoriasis_male_prevalence (All Ages)"
+    title = "psoriasis_male_prevalence "
   ) +
   theme_minimal(base_size = 14) +
   theme(
@@ -8981,7 +8981,7 @@ ggplot_psoriasis_male_inc_summary2 <- ggplot(psoriasis_male_inc_summary2, aes(x 
   labs(
     x = "Year",
     y = "Rate",
-    title = "psoriasis_male_incidence (All Ages)"
+    title = "psoriasis_male_incidence "
   ) +
   theme_minimal(base_size = 14) +
   theme(
@@ -9055,7 +9055,7 @@ ggplot_psoriasis_female_inc_summary2 <- ggplot(psoriasis_female_inc_summary2, ae
   labs(
     x = "Year",
     y = "Rate",
-    title = "psoriasis_female_incidence (All Ages)"
+    title = "psoriasis_female_incidence "
   ) +
   theme_minimal(base_size = 14) +
   theme(
@@ -9129,7 +9129,7 @@ ggplot_psoriasis_female_pr_summary2 <- ggplot(psoriasis_female_pr_summary2, aes(
   labs(
     x = "Year",
     y = "Rate",
-    title = "psoriasis_female_prevalence (All Ages)"
+    title = "psoriasis_female_prevalence "
   ) +
   theme_minimal(base_size = 14) +
   theme(
@@ -11337,3 +11337,126 @@ print(p_daic)
 
 
 ```
+
+
+
+```{r message=FALSE, warning=FALSE}
+library(dplyr)
+library(tidyr)
+library(knitr)
+library(kableExtra)
+
+# -----------------------------
+# SETTINGS
+# -----------------------------
+year_start <- 1990
+year_end   <- 2021
+
+measures_keep <- c("Prevalence")  # άλλαξε/πρόσθεσε αν θες
+
+age_levels <- c("20s","30s","40s","50s","60s","70+")
+sex_levels <- c("Female","Male")
+
+# -----------------------------
+# 1) CREATE df_arrows (↑ / ↓ / —) PER cause-location-sex-age
+# Rule:
+#   ↑ if CI_end entirely above CI_start (lower_end > upper_start)
+#   ↓ if CI_end entirely below CI_start (upper_end < lower_start)
+#   — otherwise (overlap)
+# -----------------------------
+df_arrows <- full_data %>%
+  filter(
+    measure %in% measures_keep,
+    year %in% c(year_start, year_end),
+    age %in% age_levels,
+    sex %in% sex_levels
+  ) %>%
+  mutate(
+    year = as.integer(year),
+    age  = factor(age, levels = age_levels),
+    sex  = factor(sex, levels = sex_levels)
+  ) %>%
+  group_by(measure, location, cause, sex, age, year) %>%
+  summarise(
+    lower = mean(lower, na.rm = TRUE),
+    upper = mean(upper, na.rm = TRUE),
+    .groups = "drop"
+  ) %>%
+  pivot_wider(
+    names_from  = year,
+    values_from = c(lower, upper),
+    names_sep   = "_"
+  ) %>%
+  mutate(
+    lower_start = .data[[paste0("lower_", year_start)]],
+    upper_start = .data[[paste0("upper_", year_start)]],
+    lower_end   = .data[[paste0("lower_", year_end)]],
+    upper_end   = .data[[paste0("upper_", year_end)]],
+
+    arrow = case_when(
+      is.na(lower_start) | is.na(upper_start) | is.na(lower_end) | is.na(upper_end) ~ NA_character_,
+      lower_end > upper_start ~ "↑",
+      upper_end < lower_start ~ "↓",
+      TRUE ~ "—"
+    )
+  ) %>%
+  select(measure, cause, location, sex, age, arrow)
+
+# -----------------------------
+# 2) BUILD tables_by_disease
+# Each table: rows = (location, sex), columns = age groups
+# Final columns: location | sex | 20s | 30s | 40s | 50s | 60s | 70+
+# -----------------------------
+tables_by_disease <- df_arrows %>%
+  mutate(
+    sex = factor(sex, levels = sex_levels),
+    age = factor(age, levels = age_levels)
+  ) %>%
+  split(.$cause) %>%
+  lapply(function(d) {
+
+    tab <- d %>%
+      select(location, sex, age, arrow) %>%
+      pivot_wider(names_from = age, values_from = arrow)
+
+    # fill missing age columns (if any)
+    missing_ages <- setdiff(age_levels, names(tab))
+    if (length(missing_ages) > 0) tab[missing_ages] <- NA_character_
+
+    tab %>%
+      select(location, sex, all_of(age_levels)) %>%
+      arrange(location, sex)
+  })
+```
+
+```{r results='asis', message=FALSE, warning=FALSE}
+# -----------------------------
+# 3) PRINT ALL DISEASE TABLES (HTML)
+# -----------------------------
+for (dis in names(tables_by_disease)) {
+
+  cat("\n\n## ", dis, "\n\n", sep = "")
+
+  tables_by_disease[[dis]] %>%
+    kable(
+      format = "html",
+      booktabs = TRUE,
+      align = c("l", "l", rep("c", length(age_levels))),
+      caption = paste0(
+        "Trend ", year_start, "–", year_end,
+        " (↑/↓/—) ανά χώρα, φύλο και ηλικιακή ομάδα — ", dis
+      )
+    ) %>%
+    kable_styling(
+      full_width = TRUE,
+      bootstrap_options = c("striped", "condensed", "hover")
+    ) %>%
+    print()
+}
+```
+
+
+
+
+
+
