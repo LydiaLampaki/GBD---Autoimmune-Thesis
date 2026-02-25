@@ -11346,24 +11346,16 @@ library(tidyr)
 library(knitr)
 library(kableExtra)
 
-# -----------------------------
-# SETTINGS
-# -----------------------------
+
 year_start <- 1990
 year_end   <- 2021
 
-measures_keep <- c("Prevalence")  # άλλαξε/πρόσθεσε αν θες
+measures_keep <- c("Prevalence")  
 
 age_levels <- c("20s","30s","40s","50s","60s","70+")
 sex_levels <- c("Female","Male")
 
-# -----------------------------
-# 1) CREATE df_arrows (↑ / ↓ / —) PER cause-location-sex-age
-# Rule:
-#   ↑ if CI_end entirely above CI_start (lower_end > upper_start)
-#   ↓ if CI_end entirely below CI_start (upper_end < lower_start)
-#   — otherwise (overlap)
-# -----------------------------
+
 df_arrows <- full_data %>%
   filter(
     measure %in% measures_keep,
@@ -11402,11 +11394,7 @@ df_arrows <- full_data %>%
   ) %>%
   select(measure, cause, location, sex, age, arrow)
 
-# -----------------------------
-# 2) BUILD tables_by_disease
-# Each table: rows = (location, sex), columns = age groups
-# Final columns: location | sex | 20s | 30s | 40s | 50s | 60s | 70+
-# -----------------------------
+
 tables_by_disease <- df_arrows %>%
   mutate(
     sex = factor(sex, levels = sex_levels),
@@ -11430,9 +11418,7 @@ tables_by_disease <- df_arrows %>%
 ```
 
 ```{r results='asis', message=FALSE, warning=FALSE}
-# -----------------------------
-# 3) PRINT ALL DISEASE TABLES (HTML)
-# -----------------------------
+
 for (dis in names(tables_by_disease)) {
 
   cat("\n\n## ", dis, "\n\n", sep = "")
@@ -11457,6 +11443,80 @@ for (dis in names(tables_by_disease)) {
 
 
 
+```{r}
+library(dplyr)
+library(broom)
+library(knitr)
+library(kableExtra)
+
+percent_cutoff <- 0.03
+year_start <- 1990
+year_end   <- 2021
+years_span <- year_end - year_start
+
+df_prev <- full_data %>%
+  filter(measure == "Prevalence", metric == "Rate") %>%
+  mutate(year = as.integer(year))
+
+
+df_age_mean <- df_prev %>%
+  group_by(cause, location, sex, year) %>%
+  summarise(val = mean(val, na.rm = TRUE), .groups = "drop")
+
+
+df_country_series <- df_age_mean %>%
+  group_by(cause, location, year) %>%
+  summarise(val = mean(val, na.rm = TRUE), .groups = "drop")
+
+
+level_tbl <- df_country_series %>%
+  group_by(cause, location) %>%
+  summarise(level = mean(val, na.rm = TRUE), .groups = "drop")
+
+
+slopes_country <- df_country_series %>%
+  group_by(cause, location) %>%
+  do(tidy(lm(val ~ year, data = .)) %>% filter(term == "year")) %>%
+  ungroup() %>%
+  transmute(cause, location, slope = estimate) %>%
+  left_join(level_tbl, by = c("cause","location")) %>%
+  mutate(
+    delta_1990_2021 = slope * years_span,
+    rel_change = delta_1990_2021 / level,     
+    sign = case_when(
+      is.na(rel_change) ~ NA_character_,
+      abs(rel_change) < percent_cutoff ~ "—",
+      rel_change > 0 ~ "↑",
+      TRUE ~ "↓"
+    )
+  )
+
+
+general_trend <- slopes_country %>%
+  filter(!is.na(sign)) %>%
+  count(cause, sign, name = "n") %>%
+  group_by(cause) %>%
+  mutate(max_n = max(n)) %>%
+  filter(n == max_n) %>%
+  summarise(
+    trend = ifelse(n() > 1, "—", first(sign)),
+    .groups = "drop"
+  )
+
+final_table <- general_trend %>%
+  transmute(
+    `Νόσημα` = cause,
+    `Γενική τάση (1990–2021)` = trend
+  ) %>%
+  arrange(`Νόσημα`)
+
+kable(final_table, format = "html", align = c("l","c"),
+      caption = paste0(
+        "Γενική τάση επιπολασμού (Prevalence rate) 1990–2021 ανά νόσημα (↑/↓/—). "
+      )) %>%
+  kable_styling(full_width = FALSE,
+                bootstrap_options = c("striped","condensed","hover"))
+```
 
 
 
